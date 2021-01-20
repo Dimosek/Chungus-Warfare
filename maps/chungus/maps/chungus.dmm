@@ -1,0 +1,87 @@
+"aa" = (/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"ab" = (/turf/unsimulated/wall/chung,/area/townhall/chungus)
+"ac" = (/turf/unsimulated/floor/chungus,/area/battle)
+"ad" = (/turf/unsimulated/wall/chung,/area/battle)
+"ae" = (/turf/unsimulated/floor/rescue_base,/area/battle)
+"af" = (/obj/effect/landmark/start{name = "Chungus"},/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"ag" = (/turf/unsimulated/floor/noob,/area/battle)
+"ah" = (/turf/unsimulated/floor/noob,/area/townhall/noob)
+"ai" = (/turf/unsimulated/wall/noob,/area/townhall/noob)
+"aj" = (/turf/unsimulated/wall/noob,/area/battle)
+"ak" = (/obj/machinery/light/chungus_shrine,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"al" = (/obj/machinery/light/noob_shrine,/turf/unsimulated/wall/noob,/area/townhall/noob)
+"am" = (/obj/machinery/light/noob_shrine,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"an" = (/obj/effect/landmark/start{name = "Noob"},/turf/unsimulated/floor/noob,/area/townhall/noob)
+"ao" = (/obj/item/ammo_magazine/box/a556,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"ap" = (/obj/item/weapon/melee/whip/abyssal,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aq" = (/obj/item/weapon/melee/baton,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"ar" = (/obj/item/weapon/melee/classic_baton,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"as" = (/obj/machinery/door/unpowered/simple/wood,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"at" = (/obj/item/weapon/melee/nailstick,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"au" = (/obj/item/weapon/arrow/rod,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"av" = (/obj/item/ammo_casing/rocket,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aw" = (/obj/item/weapon/melee/telebaton,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"ax" = (/obj/item/ammo_magazine/c556,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"ay" = (/obj/item/weapon/gun/projectile/automatic/sts35,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"az" = (/obj/item/weapon/gun/projectile/shotgun/pump/combat,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aA" = (/obj/item/weapon/storage/box/shotgunshells,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aB" = (/obj/item/weapon/gun/energy/captain,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aC" = (/obj/item/weapon/gun/projectile/heavysniper,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aD" = (/obj/item/weapon/gun/energy/laser,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aE" = (/obj/item/weapon/gun/projectile/automatic/z8,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aF" = (/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aG" = (/obj/item/weapon/gun/projectile/heavysniper/ant,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aH" = (/obj/item/weapon/gun/launcher/rocket,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aI" = (/obj/item/weapon/gun/launcher/crossbow,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aJ" = (/obj/item/ammo_magazine/a10mm,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aK" = (/obj/item/weapon/gun/projectile/automatic/c20r,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aL" = (/obj/item/weapon/arrow/RCD,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aM" = (/obj/item/ammo_magazine/box/a556,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aN" = (/obj/item/weapon/gun/projectile/automatic/l6_saw,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aO" = (/obj/item/weapon/gun/projectile/revolver/detective,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aP" = (/obj/item/weapon/melee/energy/blade,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aQ" = (/obj/item/weapon/gun/projectile/revolver/mateba,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aR" = (/obj/item/weapon/melee/energy/axe,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aS" = (/obj/item/weapon/melee/classic_baton,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aT" = (/obj/item/ammo_magazine/c50,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aU" = (/obj/item/ammo_magazine/a762,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aV" = (/obj/item/ammo_magazine/box/c9mm,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aW" = (/obj/item/ammo_magazine/box/c9mm,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aX" = (/obj/item/ammo_magazine/c38,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aY" = (/obj/item/weapon/melee/energy/sword/blue,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aZ" = (/obj/item/weapon/melee/energy/sword/green,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"ba" = (/obj/item/weapon/melee/energy/sword/red,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"bb" = (/obj/item/clothing/head/helmet/arbiter,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"bc" = (/obj/item/clothing/head/helmet/nt/guard,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"bd" = (/obj/item/clothing/suit/armor/bulletproof,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"be" = (/obj/item/clothing/head/helmet/merc,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"bf" = (/obj/item/clothing/head/helmet/gladiator,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"bg" = (/obj/item/clothing/suit/armor/riot,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"bh" = (/obj/selfdestruct/chungus,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"bi" = (/obj/item/clothing/suit/armor/riot,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"bj" = (/obj/selfdestruct/noob,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"bk" = (/obj/item/clothing/head/helmet/riot,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"bl" = (/obj/machinery/door/unpowered/simple/wood,/turf/unsimulated/floor/noob,/area/townhall/noob)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaafabaaaaaaaaaaaaaaaaaaabacacacaeaeacacaeaeaeaeaeaeadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeagagaeaeaeaeaeaeaeagagaeaeaeaeaeaeaeaeaeaeaeahahahahahahahahahahahahaianahahahahblblblblbl
+aaaaaaaaaaaaaaaaaaaaaaaaafabaaaaaaaaaaaaaaaaaaabacacacaeaeacaeaeaeaeaeaeaeadaeaeaeaeadadaeaeaeaeaeaeaeaeaeaeaeaeagagaeajajaeaeaeaeagagaeagagagagaeaeaeaeaeahahahahaiahahahaiahahahaianahahahahblblblblbl
+aaaaaaaaaaaaaaaaaaaaaaaaafabaaakaaaaaaaaaaaaaaabacacacaeaeacacacacaeaeadaeaeaeaeaeaeaeadaeaeaeaeaeaeaeaeaeaeaeaeaeagagagajaeaeagagagagagajajajagagagaeaeaeaiahahahaiahahahaiahahahaianahamahahblblbjblbl
+aaaaaaaaaaaaaaaaaaakaaaaafabaaaaaaaaabababaaaaabacacacaeacacaeaeaeaeaeadaeaeaeaeadaeaeadadaeaeaeaeaeaeaeaeaeaeaeaeagagagajajaeagagagagajajagagagaeaeaeaeajaiamahahaiahahahaiahamahaianahahahahblblblblbl
+aaaaaaaaaaaaaaaaaaaaaaaaafababababaaabaaaaaaaaabacacacaeaeacacacadaeaeaeaeaeaeaeaeadadadaeaeaeaeaeadaeajaeaeaeagaeaeagagagajagaeaeaeajajagagagagajaeagajajahahahahaiahamahaiahahahaianbbaUaUaUblblblblbl
+aaaaaaaaaaaaaaaaakaaaaaaaaaaaaaaabaaabaaaaaaaaabacacacaeaeaeaeaeadaeaeaeaeaeaeaeadadaeaeadadaeaeaeadaeajaeaeaeagagaeagagagajajaeaeajajaeaeagagagajajajajaeahahahahaiahahahaiahaiaiaianbbahahaUaoaoaobcah
+aaaaaaaaapaqarararararaRaaatabaaabaaabaaaaaaaaabacacacadaeaeaeaeadadaeacacacacaeaeadaeaeaeaeaeaeaeadaeajaeaeaeaeagagagaeagagajajajajaeaeaeaeaeagagajagagagahahahahahahahahaiauauauaianbbahahahaoaoavbcah
+bdbebfbgapawaxayaxazaAaRaaatabaaabaaabaaaaaaaaabacacacadaeaeaeaeaeadacacaeadadaeaeadadaeaeaeaeaeaeadaeajaeaeaeaeagaeagagagagagajagagaeaeaeaeaeagagajagaeaeahahahahahahahahaiauaiauaianaBamahahaoaoavbcah
+bdbebfbgapaaaxaCaxazaAaRaaatabaaaaaaabaaakaaaaaaacacacadaeaeacacaeaeaeaeaeaeaeaeadaeadadaeaeaeaeaeadaeajaeaeaeaeaeaeaeagagagaeagagagagaeaeagagaeaeajajagaeahahahahahahahahaiauaiaDaDaDaEaUaFaGavavavahah
+bdbebfbgaaaaaxaCaaazaAaRaaatabaaakaaabaaaaaaaaaaacacacadaeaeaeacadaeadaeaeaeaeaeaeaeaeadaeaeaeadaeadaeajaeaeaeaeaeaeaeagaeaeagagaeagagagagagaeaeaeaeajagagamahahahalahahahaiauaiaHaHaDaEaUaFaoaVbiahahah
+bdbebfbgakaaaxayaxazaAaRaaatabaaabaaabaaaaaaaaabacacacadaeaeaeaeadacaeadaeaeadaeaeaeaeadaeaeaeaeaeadaeajaeaeaeaeaeaeaeaeaeaeagagagagagagagagaeaeaeaeajajaeahahahahahahahahaiauaiaIaIaDaEaUaFaoahbiahahah
+bdbebfbgaaaWaxayaxazaAakaaaaabaaabaaabaaaaaaaaabacacacadaeaeacaeadacaeadaeadaeadaeaeaeaeaeaeaeaeaeadaeajaeaeaeaeaeaeaeagagaeaeagajajagagaeagagagagaeaeajaeahahaiaiahahahahaiauaiauaianaEaUaFaobibiamahah
+bdbebfbgaaaaaxayaxaJaKaJaaaaaaaaabaaabaaaaaaaaabacacacadaeaeacacadaeaeadaeaeaeadadaeaeaeaeaeaeaeaeadaeajaeaeaeaeaeaeajaeagagaeaeaeajagagagagaeagagagaeaeaeahahahaiahahahahaiaLauauaianaEaUaFaobiaTaTahah
+bdbebfbgaMaMaNaYaZaJaKaJafababababaaabababaaaaabacacacaeaeacadacadaeaeadaeaeacaeaeadaeaeaeaeadaeaeajaeajaeaeaeaeaeaeajajaeagagagaeajajagagagagagagagagaeaeahahahaiaiahahahaiahaiaiaianaUahaFaObiaTaTbkah
+akaaaaaaaMaMaNaYaPaaaZaaafabaaaaaaaaaaaaaaaaaaabacacacaeacadadaeaeacacadaeadaeaeaeadadaeaeadadaeaeaeaeaeaeaeagagagagagajajagagagagagaeaeagagagajajagagagagaiaiahahahahahahahahahahaianahahahaOaQaQaTbkah
+asasasasasbabaaRaaaaaaaaafabaaakaaaaaaaaaaaaaaabacacacaeadadacaeadadadacaeadaeaeaeaeadadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeajaeaeagagagagagagaeagagagajajagagahaiaiahahamahahaiahahahaianamahaXaOaXaXaXbkah
+asasasasasaaaaaaakaaaaaaafabaaaaaaaaaaaaaaaaaaabacacacacadaeaeaeaeaeaeadaeaeaeaeaeaeaeadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeajajaeaeaeaeaeagagagagagagagagagajaiaiaiaiahahahahaiahamahaianaSaSaSaSaSahahahah
+asasbhasasaaaaaaaaaaaaaaafabaaaaaaaaaaaaaaaaaaabacacacacadaeaeaeadadadadaeaeaeaeaeadaeaeadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeagagagagajaiaiaiaiahahahahaiahahahaianaSaSaSaSaSahahahah
+asasasasasakaaaaaaaaaaaaaaabaaaaaaakaaaaaaaaaaabacacacaeadacacaeacaeaeaeaeadaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeajaiaiaiaiahahahahaiahahahaiahahahahahahahahahah
+asasasasasaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaabacacacaeadaeaeaeacacacacacaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeahaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeajaiaiaiaiahahahahaiahahahaiahahahahahahahahahah
+"}

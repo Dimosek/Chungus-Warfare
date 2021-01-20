@@ -1,0 +1,103 @@
+"a" = (/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"b" = (/obj/machinery/light/chungus_shrine,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"c" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"d" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"e" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"f" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"g" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"h" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"i" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"j" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"k" = (/turf/unsimulated/wall/chung,/area/townhall/chungus)
+"l" = (/obj/machinery/door/airlock/maintenance_hatch,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"m" = (/obj/effect/landmark/start,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"n" = (/obj/selfdestruct/chungus,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"o" = (/obj/item/ammo_magazine/c556,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"p" = (/obj/machinery/light/chungus_shrine,/turf/unsimulated/wall/chung,/area/townhall/chungus)
+"q" = (/turf/unsimulated/floor/rescue_base,/area/battle)
+"r" = (/turf/unsimulated/wall/chung,/area/battle)
+"s" = (/obj/structure/deity/pylon,/turf/unsimulated/floor/rescue_base,/area/battle)
+"t" = (/obj/structure/deity/pylon,/turf/unsimulated/wall/chung,/area/battle)
+"u" = (/obj/item/weapon/card/emag,/obj/structure/deity/altar,/turf/unsimulated/floor/rescue_base,/area/battle)
+"v" = (/turf/unsimulated/wall/noob,/area/battle)
+"w" = (/turf/unsimulated/floor/noob,/area/battle)
+"x" = (/obj/machinery/light/noob_shrine,/turf/unsimulated/floor/noob,/area/battle)
+"y" = (/obj/machinery/light/noob_shrine,/turf/unsimulated/wall/noob,/area/battle)
+"z" = (/turf/unsimulated/wall/noob,/area/townhall/noob)
+"A" = (/turf/unsimulated/floor/noob,/area/townhall/noob)
+"B" = (/obj/machinery/light/noob_shrine,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"C" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"D" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"E" = (/obj/structure/closet/crate,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"F" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"G" = (/obj/structure/closet/crate,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"H" = (/obj/effect/landmark/start{name = "Noob"},/turf/unsimulated/floor/noob,/area/townhall/noob)
+"I" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"J" = (/obj/structure/closet/crate,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"K" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"L" = (/obj/structure/closet/crate,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"M" = (/obj/machinery/door/airlock/maintenance_hatch,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"N" = (/obj/selfdestruct/chungus,/turf/unsimulated/floor/noob,/area/townhall/noob)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaabaaaabaaaaaaaaaaa
+aaaaaabaaaabaaaaaaabaaaaaaaaaaaaaaabaaba
+aaaaaaaaaaaaaaacdefaaaaaaaaaabaaaaaaaaaa
+abaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaabaaghijaaaaklkaaabaaaaaaabaa
+aaaaaaaaaaaaaaammmmbaaalnlaaaaaaaaaaaaaa
+aaabaabaaaaabaacdefaaaaklkaabacdefacdefa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaammmmaaaaaa
+aaaaaaaabaakkkkghijaaakaakkkkkghijaghija
+aaaabaaaaaaaaakkkkkaaaaaaakkkkkkkkkkkkkk
+kkkkkkkkkkkkkkkkkkaaakaaaakkkkkkkkkkkkkk
+kkkkkkkkkkkkkkkkkbaaakaaabkkkkkkkkkkkkkk
+aaaaaaaaaaaaoakkkaaakkakaakaaaaaaaaaaaaa
+aaaaaaaaaaaaaakkkbaakkapakkaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaakkaaakakkkaaaaaaaaaaaaaa
+aaaaaaakkkkkkkkkkbaakaabkkkkkkkkkkkaaaaa
+aaaaaaakkkkkkkkkkkkakakakkkkkkkkkkkkaaaa
+aaaaaaakkkabaabaakakaaakbaaabaakkkkkaaaa
+qqqqqqqrrrqqqqqrqrrrqrqrrqqqqqqqqqrrqqqq
+qqqqqqqrrrqqqrqqqqqqqqqqqqqqqqrrrrrrqqqq
+rrrrqqqrrrqqqqqrrqrrrrrrrrrrrqrrrrqqqqqq
+rrrqrqqqrrrrrrqrrqrrrrrrrrrrrqrrrrrrrqqq
+qqqqrrrrrqqqqqqqrqrrrrqqqqqqqqrrrrrrrqqq
+qqqqqqqqrqqqqrqqrqqqqqqqrrrrrqrrrrqqqqqq
+qqrrqrrqqqqqqqrrrrrrrqqqrrqqqqrrrrqqqqqq
+rrqqqqrrrrrrrqqrrqrrrrrrqqqqqqqqqrrrrrrr
+rrqqqqqqrrqqqqqqqqrqqqqqqqqqqqqqqrrrrrrr
+rqqqqqqqqqqqqrrrqqqqrrqqqqqqqqqqqqqqqqqr
+rqrqqqqrqqqqrrqqqsrrtqqqqqqqrrqqqqqqqqqr
+rqqqqqqqqqqqrqqqrrrqqqqqqqqqqrqqqqqqqrrr
+rqqqqqqqqqqrqqqqsqqqqsqqqqqqqrrrrqqqqrrq
+rrqqqqqqqrrqqqqquqqqqqvqqqqqqqqqqrqqqrrq
+qrqqqqqqqqqqqqqqqqqqqqvvvqqqqqqqqqqrrrrq
+rrqqqqqqqqqqqqqqsqqqqsqqqvqqqqqqqqqrvqqq
+vvvqqqqqqqqqqvqqqvqqvvqqqvvqqqqqqqqvvqqq
+vqvqqqqqqqqqvvqqqsqqsqvqqqvvqqqqqqqvvqqq
+vvqqqqqqqqqvvqqqqqqqqqqvqqvvqqqqqqqqvvvq
+vqqqqqqqqqqqqqqqqvvvvvvvqqvvvqqqqqqqqqvq
+vvqqqqqqqqqqqqvvvqqqqqvqqqvqqqqqqqqvvvvq
+qvvqqvvvvvvqqqvvvqqqvvvqqqvqqvvvqqqvvvvq
+qqvvqvqqqqqvvqvvvwwvvwwwwvvwxvvvvvvvvvvq
+qqqvvvqqqqqqvvvvywwvwwwwvvwwwwvvqqqqqqqq
+qqqqqqqqqqqqqvvwwwwwvwwwwwwwwwvvqqqqqqqq
+qqqqqqqqqqqqqvvwwwwwwwvwwwwwwwvvqqqqqqqq
+zzzzzzzzzzzzzzAAAAAAzAAzAAAAAAAzzzzzzzzz
+zzzzzzzzzzzzzzABAAzzAAzzABAAAABzzzzzzzzz
+zzzzzzzzzzzzzzAAAAzzAAzzAAAAAAAzzzzzzzzz
+AAAAAAAAAAzzzzAAAzzzAAzzAAAAAAAzzzzzzzzz
+AAAAAAAAAAAAzzBAAzzzAAzzAAAAAzzzAAAAzzzz
+AABAAAAAAAAAzzAAAzzzAAzzAAABAzzzAAAAAAAA
+AAAAAAAABAAAzzzzzzAAAAAzzzzzzzAAAABAAAAA
+AAAAAAAAAAAzzCDEFGAAAAAABAAACDEFGAAAAAAA
+AAAAAAAAAAAzzHHHHAAAAAAAAAAAHHHHAAAAAAAA
+AAAAAAAAAAAAAIIJKLAAAAAAzMzAIIJKLAAAAAAA
+AAAAABAAAAAAAACDEFGAAAAAMNMACDEFGABAAAAA
+AABAAAAAAAABAAAAAAAAAAAAzMzAAAAAAAAAAAAA
+AAAAAAAAAAAAAAIIJKLBAAAAAAAAIIJKLAAAAAAA
+"}

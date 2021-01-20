@@ -1,0 +1,131 @@
+"aa" = (/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"ab" = (/area/battle)
+"ac" = (/turf/unsimulated/floor/noob,/area/townhall/noob)
+"ad" = (/turf/unsimulated/floor/chungus,/area/battle)
+"ae" = (/turf/unsimulated/floor/noob,/area/battle)
+"af" = (/turf/unsimulated/floor/rescue_base,/area/battle)
+"ag" = (/turf/unsimulated/wall/chung,/area/townhall/chungus)
+"ah" = (/turf/unsimulated/wall/noob,/area/townhall/noob)
+"ai" = (/obj/machinery/light/chungus_shrine,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aj" = (/obj/effect/decal/cleanable/cum,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"ak" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"al" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"am" = (/obj/structure/closet/crate,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"an" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"ao" = (/obj/structure/closet/crate,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"ap" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aq" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"ar" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"as" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"at" = (/obj/effect/landmark/start{name = "Noob"},/turf/unsimulated/floor/noob,/area/townhall/noob)
+"au" = (/obj/effect/landmark/start{name = "Chungus"},/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"av" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aw" = (/obj/structure/closet/crate,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"ax" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"ay" = (/obj/structure/closet/crate,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"az" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aA" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aB" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aC" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aD" = (/obj/machinery/light/chungus_shrine,/turf/unsimulated/wall/chung,/area/townhall/chungus)
+"aE" = (/obj/effect/decal/cleanable/cum,/turf/unsimulated/wall/noob,/area/townhall/noob)
+"aF" = (/turf/unsimulated/wall/chung,/area/battle)
+"aG" = (/turf/unsimulated/wall/noob,/area/battle)
+"aH" = (/obj/capturebt{name = "Left Capture Point"},/turf/unsimulated/floor/chungus,/area/battle)
+"aI" = (/obj/capturebt{name = "Middle Capture Point"},/turf/unsimulated/floor/rescue_base,/area/battle)
+"aJ" = (/obj/capturebt{name = "Right Capture Point"},/turf/unsimulated/floor/noob,/area/battle)
+"aK" = (/obj/machinery/light/noob_shrine,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aL" = (/obj/structure/closet/crate,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aM" = (/obj/structure/closet/crate,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aN" = (/obj/structure/closet/crate,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aO" = (/obj/machinery/light/noob_shrine,/turf/unsimulated/wall/noob,/area/townhall/noob)
+"aP" = (/obj/item/weapon/gun/energy/captain,/obj/item/weapon/gun/energy/captain,/obj/item/weapon/gun/energy/captain,/obj/structure/closet/crate,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"aQ" = (/obj/machinery/light/noob_shrine,/turf/unsimulated/floor/noob,/area/battle)
+"aR" = (/obj/effect/decal/cleanable/cum,/turf/unsimulated/floor/chungus,/area/battle)
+"aS" = (/obj/effect/decal/cleanable/cum,/turf/unsimulated/floor/noob,/area/battle)
+"aT" = (/obj/structure/shuttle/window,/turf/unsimulated/floor/noob,/area/battle)
+"aU" = (/obj/item/weapon/gun/energy/taser/carbine{desc = "PUSSY DESTROYER 500XE."; name = "PUSSY WAGON DESTROYER ANUS"},/turf/unsimulated/floor/chungus,/area/battle)
+"aV" = (/obj/item/weapon/gun/energy/taser/carbine{desc = "PUSSY DESTROYER 500XE."; name = "PUSSY WAGON DESTROYER ANUS"},/turf/unsimulated/floor/noob,/area/battle)
+"aW" = (/obj/structure/sign/monkey_painting,/turf/unsimulated/wall/chung,/area/battle)
+"aX" = (/obj/machinery/porta_turret/chungus,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aY" = (/obj/effect/decal/cleanable/cum,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aZ" = (/obj/structure/closet/crate,/obj/item/weapon/storage/box/shotgunammo,/obj/item/weapon/storage/box/shotgunammo,/obj/item/weapon/storage/box/shotgunammo,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"ba" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/shotgun/pump/combat,/obj/item/weapon/gun/projectile/shotgun/pump/combat,/obj/item/weapon/gun/projectile/shotgun/pump/combat,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"bb" = (/obj/structure/closet/crate,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"bc" = (/obj/structure/closet/crate,/obj/item/weapon/storage/box/shotgunammo,/obj/item/weapon/storage/box/shotgunammo,/obj/item/weapon/storage/box/shotgunammo,/obj/item/weapon/storage/box/shotgunammo,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"bd" = (/obj/machinery/porta_turret/noob,/turf/unsimulated/floor/noob,/area/townhall/noob)
+"be" = (/obj/machinery/porta_turret/chungus,/turf/unsimulated/floor/chungus,/area/battle)
+"bf" = (/obj/machinery/porta_turret/noob,/turf/unsimulated/floor/noob,/area/battle)
+
+(1,1,1) = {"
+agagagagagagagagagagagagagagababababababababababababababababababababababababababababababababababababababababahahahahahahahahahahahahahahahah
+agagagaiaaaaaiaaaaaaagagagagababababababababababababababababababababababababababababababababababababababababahahahacacacacacacacacacacaKacah
+agagagaaaaaaaaaaaaaaaaagagagababababababababababababababababababababababababababababababababababababababababahahahacajacacacacacacacacacacah
+agagaaaaaaaLaMaaaaaaaiagagagababababababababababababababababababababababababababababababababababababababababahahahakalamanaoacakalacanaoacah
+agapaqarasapaqarasaaaaagagagababababababababababababababababababababababababababababababababababababababababahacacatatatatatacatatatatatacah
+agauauauauauauauauaaaNaaagagababababababababababababababababababababababababababababababababababababababababahacacavavawaxayacavavacaxayacah
+agazaAaBaCazaAaBaCaaaNaaaiagababababababababababababababababababababababababababababababababababababababababahacacakalacanaoacakalacanaoacah
+agapaqarasapaqarasaaaNaaaaagababababababababababababababababababababababababababababababababababababababababahacacatatatatatacatatatatatacah
+agauauauauauauauauaaaNaaaaagababababababababababababababababababababababababababababababababababababababababahacacavavacaxayacavavacaxayacah
+agazaAaBaCazaAaBaCaaaaaaaaagababababababababababababababababababababababababababababababababababababababababahacacajajacacacacacacacacacaOah
+agagaaaaaaaaaaaaaaaaaaaiaaagababababababababababababababababababababababababababababababababababababababababahaKacacamacacajacacacacacacahah
+agaDagaaaaaaaaaaaaaaaXagagagababababababababababababababababababababababababababababababababababababababababahahacacaPacacacacacaKacacahahah
+agagagagaaaaaaaaaaaaagagagagababababababababababababababababababababababababababababababababababababababababahahahbdawajacacacacacahaEahahah
+agagagaDaaaaaaaiaaagagagagagababababababababababababababababababababababababababababababababababababababababahahahahacacacacacacacahahahahah
+agagagagagaaaaagagagagagagagababababababababababababababababababababababababababababababababababababababababahahahahajacacacacacacahahahahah
+aFaFaFaFaFadadaFaFaFaFaFaFaFababababababababababababababababababababababababababababababababababababababababaGaGaGaGaQaeaeaeaeaQaeaGaGaeaeaG
+aFaFaFaFaFadadadaFaFaFaFaFaFababababababababababababababababababababababababababababababababababababababababaGaGaGaGaGaeaeaeaeaeaGaGaeaeaeaG
+aFaFadadadadaRadbeadaFaFaFaFababababababababababababababababababababababababababababababababababababababaGaGaGaGaeaeaGaeaSaeaSaeaGaeaeaeaeaG
+aFbeadadadadadadadadaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaTaTaTaGaGaGaGaGaGaGaGaGaGaGaebfaeaeaeaeaebfaeaeaeaeaG
+aFadadadadadadadaFaFaFadadadaFaFaFadadadadadadadadaFaFaFaFaFaFaFaFaFaFaFaFaFafafafafafaeaGaGaGaGaGaGaGaGaGaGaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaG
+aFadadadadaFaFadadadadadadadadadaFadaFaFaFaFaFafafafafafafafafaFaFaFaFaFafafafafafafafaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaG
+aFadadadadadadadaFadadadaFadadadadadadadadaFaFafafafafaFaFaFafafaFafaFaFafafafafaGafafaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaG
+aFadadadadaFaFaFadadadadaFadadadadadadadadaFadafafafafafafaFaFafafafaFafafafafafaGaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaG
+aFadadadadadadadadaFadadaFadadadadadadadadadadafafafafafaFaFafafafafafafafafafafafaGaGaGaGaGaGaGaGaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaG
+aFadadadaFadadadadadadadadadadadadadadaFaFaFadafafafafafafafafaFafafafafafafafafafafafaeaeaeaeaeaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaG
+aFadadaFadadadaFadadadadadadadadadadadaFadadadafafafafafafafaFaFafafafafafafafafafafafaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaG
+aFadaFadadaFadadaFadaFaFaFaFaFaFaFadadadadadadafafafafaFafafaFafafafafafafafafafafafafaeaeaeaeaeaeaeaeaeaeaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaG
+aFadadadaFadadadadaFaFaFaFaFaFaFaFadadadadadadaFaFaFaFafafafafafafafafafafafafafafafafaeaeaeaeaeaeaeaeaGaGaGaGaGaGaGaeaeaeaeaeaeaeaeaeaeaGaG
+aFadadadadadadaFaFaFadadaFaFaFadaFaFaFadadaFadafafafafafaFaFaFafafaGaGafafafafafafaGaGaeaeaeaeaeaeaGaGaGaGaGaGaGaGaGaGaeaeaeaeaeaeaeaeaeaGaG
+aFadadadadaFaFaFadadadadadadadadadadadadadaFadafafafafafaFaFafafafafaGaGaGafafafafafaGaGaeaeaGaGaGaGaGaGaGaGaGaGaGaGaeaeaeaGaGaGaGaGaeaeaGaG
+aFadaFadaFaFadadadaFaFaFadadadaFadadaFadadaFadafafafafaFaFaFafafafafafafaGaGafafafafafaGaGaGaGaGaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaGaGaGaGaGaGaG
+aFadaFadaFadadadadadadadaUadadadadadaFadadadadaFafafafaFaFafafafafafafafafafaGafafafafaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaGaGaGaG
+aFadadadadadaFadadadaHadadaFaFadaFaFadadadadadaFafafafafafafafafafaIafafafafaGafafafafaeaeaeaeaeaeaeaeaeaeaeaeaVaeaJaeaeaeaeaeaeaeaeaGaGaGaG
+aFadaFadadadadadaFadaFadadadadadaFadadadadadadaFaFafafafafafafafafafafafafafaGaGafafafaGaGaeaeaeaeaeaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaGaG
+aFadadadaFadaFaFaFadaFaFaFadaFaFaFadadaFaFadadafaFafafafaFaFafafafafafafafafaGafafafafaeaGaGaeaeaeaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaGaG
+aFadaFadaFaFaFadaFadadaFaFadaFadadadadadaFadadafaFafafafafaFaFaFaFaFafafafafaGafafafafaeaeaGaeaeaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaGaG
+aFadadadadaFaFaFaFadadadadadadadadadadadadadadafafafafafafafaFaFaFaFaFafafaGaGafafafafaeaeaGaGaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaGaG
+aFadaFadadadadadadaFadadadadadadadadaFadadadadafafafafaFafafafaFaFaFaFafafaGafafafafafaeaeaeaeaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaG
+aFadadaFadadaFadadadaFadadadadadadadadadadaFadafafafaFaFafafafafafafafafafafaGaGafafafaeaeaeaeaeaGaGaGaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaGaGaG
+aFadadadadadadadadadadaFadadadaFadadadadadaFaFafafaFaFaFafafafafaFafafafafafafafafafafaeaGaeaeaeaeaGaGaGaGaGaGaGaGaGaGaGaGaGaeaeaeaeaGaGaGaG
+aFadadadadaFaFadadadadadadadadaFaFadadadadadaFafafaFaFaFafafafafaFafafafafafafafafafafaeaGaeaeaeaeaeaeaGaGaGaGaGaGaeaeaeaeaeaeaeaeaGaGaGaGaG
+aFadadadadadaFaFadadadaFadadadadaFadadadadadaFafafafafafafafafafafafafafafafafafaGafafaeaGaeaeaeaeaeaeaeaeaeaeaeaGaeaeaeaeaeaeaeaeaGaeaeaeaG
+aFadadadadadadaFaFadadaFaFadadadaFaFadadadadadafafaFafafafafaFaFaFaWafafafafafaGaGafafaeaGaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaG
+aFadadadadadadadadadadaFaFaFadadadadadadadadadafafaFaFafafaFaFaFaFafafafafafafaGafafafaeaeaeaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaG
+aFadadadadadadadadadadadaFaFaFadadadadadadadadadafaFaFaFafafaFaFafafafafafafafafafafafaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaG
+aFadadadaFadadaFaFadadadaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFafafafafafafafafaGaGafafafafaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaG
+aFadadaFadadadadadaFadadaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFafafafafafafafafafaGafafafafaeaeaGaGaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaG
+aFadaFadadadadadadadadaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFafafafafafafafafaGaGaGaGaGaGaGaGaGaGaGaGaGaGaGaGaeaeaeaeaeaeaeaeaeaeaeaeaeaGaGaG
+aFadadadadadadadadadadaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaFaGaGaGaGaGaGaGaGaGaGaGaGaGaGaGaGaGaGaGaGaGaGaGaeaeaeaeaeaeaeaSaeaeaGaGaG
+aFadadadadadadaFadadadaFaFaFababababababababababababababababababababababababababababababababababababababababaGaGaGaGaGaSaeaeaeaeaeaGaGaGaGaG
+aFadadadadadaFadaFadadaFaFaFababababababababababababababababababababababababababababababababababababababababaGaGaGaGaGaGaGaeaeaebfaGaGaGaGaG
+aFaFbeadadadadadaRadadaFaFaFababababababababababababababababababababababababababababababababababababababababaGaGaGaGaGaGaGbfaeaeaGaGaGaGaGaG
+aFaFaFaFaFaFadadadadbeaFaFaFababababababababababababababababababababababababababababababababababababababababahahahahahahahahacacahahahahahah
+aFaFaFaFadaFaFadadaFaFaFaFaFababababababababababababababababababababababababababababababababababababababababahahahahahahahacacajahacacacacah
+agagagagagagagaaaYagagagagagababababababababababababababababababababababababababababababababababababababababahahahahaKacacacacacahacacajacah
+agagagagagagagaaaaaaaXaaaaagababababababababababababababababababababababababababababababababababababababababahahahahacacacacacacacacacacacah
+agagagagaDaaaaaaaaaaaaaiaaagababababababababababababababababababababababababababababababababababababababababahahahahacacbdacacaKacacajacacah
+agaaapaqarasapaZarasaaaaaaagababababababababababababababababababababababababababababababababababababababababahahahahacacacajacacacacacacacah
+agaNauauauauauauauauaaaaaaagababababababababababababababababababababababababababababababababababababababababahahahaKacacacacacacaKacacacacah
+agaaazaAaBaCazbaaBaCaaaiaaagababababababababababababababababababababababababababababababababababababababababahahaOacacacacacacacajacaKacacah
+agaaapaqarasapaZarasaaaaaaagababababababababababababababababababababababababababababababababababababababababahahahacacacacacajacacacacacacah
+agbbauauauauauauauauaaaaaaagababababababababababababababababababababababababababababababababababababababababahahahaPacacacacacacacacacaKacah
+agaaapaqarasapbaarasaaaiaaagababababababababababababababababababababababababababababababababababababababababahahahacacacacacacacacacacacacah
+agbbauauauauauauauauaaaaaaagababababababababababababababababababababababababababababababababababababababababahahakalamanaoacacakalamanaoacah
+agaaazaAaBaCazaZaBaCaaaaaaagababababababababababababababababababababababababababababababababababababababababahahatatatatatacacatatatatatacah
+agaaapaqarasapbaarasaaaiaaagababababababababababababababababababababababababababababababababababababababababahahavavacaxayacacavavawaxayaKah
+agaNauauauauauauauauaaaaaaagababababababababababababababababababababababababababababababababababababababababahahakalacanaoacacakalamanaoacah
+agaaazaAaBaCazbcaBaCaaaaaaagababababababababababababababababababababababababababababababababababababababababahahatatatatatacacatatatatatacah
+agaaaaaaaaaaaaaaaaaLaMaiaaagababababababababababababababababababababababababababababababababababababababababahahavavacaxayajacavavawaxayaKah
+agagagagagagagagagagagagagagababababababababababababababababababababababababababababababababababababababababahahahahahahahahahahahahahahahah
+"}
