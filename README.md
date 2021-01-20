@@ -1,9 +1,10 @@
-# Interpost Hague - DONE AND DUSTED WITH
 
-# Credits go to every person who worked on Interbay's/Baystation's code in the past. Thanks.
-[Baystation's Website](http://baystation12.net/) - [Interpost Hague's/InterHippie's Code](https://github.com/butmun/Interpost-Hague) - [Interpost Hague's Discord](https://discord.gg/abFdhjv)
----
-[![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](https://forthebadge.com) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
+CHUNGUS STATION BY ETET2
+feel free to commit shit
+most code is here is shitcode even by ss13 standarts due to this being a quick meme without any requirement for long term stability, but you know bay 12 still exists so why wouldnt this work long term? :)
+
+
+
 
 ### LICENSE
 The code for Baystation12 is licensed under the [GNU Affero General Public License v3](http://www.gnu.org/licenses/agpl.html), which can be found in full in LICENSE-AGPL3.txt.
