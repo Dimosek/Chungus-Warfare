@@ -26,30 +26,3 @@
 		// Derp a bit if we have brain loss.
 		if(prob(getBrainLoss()))
 			return UI_UPDATE
-
-/mob/living/silicon/robot/tg_default_can_use_topic(src_object)
-	. = shared_ui_interaction(src_object)
-	if(. <= UI_DISABLED)
-		return
-
-	// Robots can interact with anything they can see.
-	if(get_dist(src, src_object) <= client.view)
-		return UI_INTERACTIVE
-	return UI_DISABLED // Otherwise they can keep the UI open.
-
-/mob/living/silicon/ai/tg_default_can_use_topic(src_object)
-	. = shared_ui_interaction(src_object)
-	if(. < UI_INTERACTIVE)
-		return
-
-	// The AI can interact with anything it can see nearby, or with cameras.
-	if((get_dist(src, src_object) <= client.view) || cameranet.is_turf_visible(get_turf_pixel(src_object)))
-		return UI_INTERACTIVE
-	return UI_CLOSE
-
-/mob/living/silicon/pai/tg_default_can_use_topic(src_object)
-	// pAIs can only use themselves and the owner's radio.
-	if((src_object == src || src_object == silicon_radio) && !stat)
-		return UI_INTERACTIVE
-	else
-		return ..()

@@ -1,9 +1,3 @@
-// fun if you want to typecast humans/monkeys/etc without writing long path-filled lines.
-/proc/isxenomorph(A)
-	if(istype(A, /mob/living/carbon/human))
-		var/mob/living/carbon/human/H = A
-		return istype(H.species, /datum/species/xenos)
-	return 0
 
 /proc/issmall(A)
 	if(A && istype(A, /mob/living))
@@ -343,16 +337,11 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 			return
 
 		var/atom/oldeye=M.client.eye
-		var/aiEyeFlag = 0
-		if(istype(oldeye, /mob/observer/eye/aiEye))
-			aiEyeFlag = 1
 
 		var/x
 		for(x=0; x<duration, x++)
-			if(aiEyeFlag)
-				M.client.eye = locate(dd_range(1,oldeye.loc.x+rand(-strength,strength),world.maxx),dd_range(1,oldeye.loc.y+rand(-strength,strength),world.maxy),oldeye.loc.z)
-			else
-				M.client.eye = locate(dd_range(1,M.loc.x+rand(-strength,strength),world.maxx),dd_range(1,M.loc.y+rand(-strength,strength),world.maxy),M.loc.z)
+
+			M.client.eye = locate(dd_range(1,M.loc.x+rand(-strength,strength),world.maxx),dd_range(1,M.loc.y+rand(-strength,strength),world.maxy),M.loc.z)
 			sleep(1)
 		M.client.eye=oldeye
 		M.shakecamera = 0
@@ -486,19 +475,6 @@ proc/is_blind(A)
 			message = "<span class='name'>[name]</span> no longer [pick("skulks","lurks","prowls","creeps","stalks")] in the realm of the dead. [message]"
 		communicate(/decl/communication_channel/dsay, C || O, message, /decl/dsay_communication/direct)
 
-/mob/proc/switch_to_camera(var/obj/machinery/camera/C)
-	if (!C.can_use() || stat || (get_dist(C, src) > 1 || machine != src || blinded || !canmove))
-		return 0
-	check_eye(src)
-	return 1
-
-/mob/living/silicon/ai/switch_to_camera(var/obj/machinery/camera/C)
-	if(!C.can_use() || !is_in_chassis())
-		return 0
-
-	eyeobj.setLoc(C)
-	return 1
-
 // Returns true if the mob has a client which has been active in the last given X minutes.
 /mob/proc/is_client_active(var/active = 1)
 	return client && client.inactivity < active MINUTES
@@ -551,30 +527,9 @@ proc/is_blind(A)
 		if(species.name != SPECIES_HUMAN)
 			threatcount += 2
 
-	if(check_records || check_arrest)
-		var/perpname = name
-		if(id)
-			perpname = id.registered_name
-
-		var/datum/computer_file/crew_record/CR = get_crewmember_record(perpname)
-		if(check_records && !CR && !isMonkey())
-			threatcount += 4
-
-		if(check_arrest && CR && (CR.get_criminalStatus() == GLOB.arrest_security_status))
-			threatcount += 4
 
 	return threatcount
 
-/mob/living/simple_animal/hostile/assess_perp(var/obj/access_obj, var/check_access, var/auth_weapons, var/check_records, var/check_arrest)
-	var/threatcount = ..()
-	if(. == SAFE_PERP)
-		return SAFE_PERP
-
-	if(!istype(src, /mob/living/simple_animal/hostile/retaliate/goat))
-		threatcount += 4
-	return threatcount
-
-#undef SAFE_PERP
 
 /mob/proc/get_multitool(var/obj/item/device/multitool/P)
 	if(istype(P))
@@ -585,12 +540,6 @@ proc/is_blind(A)
 
 /mob/living/carbon/human/get_multitool()
 	return ..(get_active_hand())
-
-/mob/living/silicon/robot/get_multitool()
-	return ..(get_active_hand())
-
-/mob/living/silicon/ai/get_multitool()
-	return ..(aiMulti)
 
 /proc/get_both_hands(mob/living/carbon/M)
 	if(!istype(M))

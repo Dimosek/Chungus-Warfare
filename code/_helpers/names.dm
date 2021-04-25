@@ -69,24 +69,6 @@ var/religion_name = null
 		name = pick(GLOB.station_prefixes)
 		GLOB.using_map.station_name = name + " "
 
-	// Prefix
-	switch(Holiday)
-		//get normal name
-		if(null,"",0)
-			name = pick(GLOB.station_names)
-			if(name)
-				GLOB.using_map.station_name += name + " "
-
-		//For special days like christmas, easter, new-years etc ~Carn
-		if("Friday the 13th")
-			name = pick("Mike","Friday","Evil","Myers","Murder","Deathly","Stabby")
-			GLOB.using_map.station_name += name + " "
-			random = 13
-		else
-			//get the first word of the Holiday and use that
-			var/i = findtext(Holiday," ",1,0)
-			name = copytext(Holiday,1,i)
-			GLOB.using_map.station_name += name + " "
 
 	// Suffix
 	name = pick(GLOB.station_suffixes)
@@ -190,8 +172,6 @@ var/syndicate_code_response//Code response for traitors.
 	var/locations[] = length(stationlocs) ? stationlocs : drinks//if null, defaults to drinks instead.
 
 	var/names[] = list()
-	for(var/datum/computer_file/crew_record/t in GLOB.all_crew_records)//Picks from crew manifest.
-		names += t.get_name()
 
 	var/maxwords = words//Extra var to check for duplicates.
 

@@ -223,8 +223,6 @@
 			var/color = "#e6e6e6"
 			if(i%2 == 0)
 				color = "#f2f2f2"
-			var/is_antagonist = is_special_character(M)
-
 			var/M_job = ""
 
 			if(isliving(M))
@@ -371,51 +369,9 @@
 
 
 
-		if(usr.client)
-			var/client/C = usr.client
-			if(is_mentor(C))
-				dat += {"<td align=center> N/A </td>"}
-			else
-				switch(is_special_character(M))
-					if(0)
-						dat += {"<td align=center><A HREF='?src=\ref[src];traitor=\ref[M]'>Traitor?</A></td>"}
-					if(1)
-						dat += {"<td align=center><A HREF='?src=\ref[src];traitor=\ref[M]'><font color=red>Traitor?</font></A></td>"}
-					if(2)
-						dat += {"<td align=center><A HREF='?src=\ref[src];traitor=\ref[M]'><font color=red><b>Traitor?</b></font></A></td>"}
-		else
-			dat += {"<td align=center> N/A </td>"}
-
-
 
 	dat += "</table></body></html>"
 
 	usr << browse(dat, "window=players;size=640x480")
 
 
-
-/datum/admins/proc/check_antagonists()
-	if (ticker && ticker.current_state >= GAME_STATE_PLAYING)
-		var/dat = list()
-		dat += "<html><head><title>Round Status</title></head><body><h1><B>Round Status</B></h1>"
-		dat += "Current Game Mode: <B>[ticker.mode.name]</B><BR>"
-		dat += "Round Duration: <B>[roundduration2text()]</B><BR>"
-		dat += "<B>Evacuation</B><BR>"
-		if (evacuation_controller.is_idle())
-			dat += "<a href='?src=\ref[src];call_shuttle=1'>Call Evacuation</a><br>"
-		else
-			var/timeleft = evacuation_controller.get_eta()
-			if (evacuation_controller.waiting_to_leave())
-				dat += "ETA: [(timeleft / 60) % 60]:[add_zero(num2text(timeleft % 60), 2)]<BR>"
-				dat += "<a href='?src=\ref[src];call_shuttle=2'>Send Back</a><br>"
-
-		dat += "<a href='?src=\ref[src];delay_round_end=1'>[ticker.delay_end ? "End Round Normally" : "Delay Round End"]</a><br>"
-		dat += "<hr>"
-		var/list/all_antag_types = all_antag_types()
-		for(var/antag_type in all_antag_types)
-			var/datum/antagonist/A = all_antag_types[antag_type]
-			dat += A.get_check_antag_output(src)
-		dat += "</body></html>"
-		usr << browse(jointext(dat,null), "window=roundstatus;size=400x500")
-	else
-		alert("The game hasn't started yet!")

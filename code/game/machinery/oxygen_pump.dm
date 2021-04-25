@@ -78,8 +78,6 @@
 		breather = null
 		use_power = 1
 
-/obj/machinery/oxygen_pump/attack_ai(mob/user as mob)
-	ui_interact(user)
 
 /obj/machinery/oxygen_pump/proc/attach_mask(var/mob/living/carbon/C)
 	if(C && istype(C))

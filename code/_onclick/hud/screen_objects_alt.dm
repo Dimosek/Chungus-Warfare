@@ -359,10 +359,7 @@
 		if(ishuman(usr))
 			var/mob/living/carbon/human/H = usr
 			H.check_skills()
-	else
-		if(ishuman(usr))
-			var/mob/living/carbon/human/H = usr
-			H.check_family()
+
 
 /obj/screen/Click(location, control, params)
 	if(!usr)	return 1
@@ -582,50 +579,9 @@
 			var/mob/living/M = usr
 			M.report_stamina()
 
-		if("module")
-			if(isrobot(usr))
-				var/mob/living/silicon/robot/R = usr
-//				if(R.module)
-//					R.hud_used.toggle_show_robot_modules()
-//					return 1
-				R.pick_module()
+		
+	
 
-		if("inventory")
-			if(isrobot(usr))
-				var/mob/living/silicon/robot/R = usr
-				if(R.module)
-					R.hud_used.toggle_show_robot_modules()
-					return 1
-				else
-					to_chat(R, "You haven't selected a module yet.")
-
-		if("radio")
-			if(issilicon(usr))
-				usr:radio_menu()
-		if("panel")
-			if(issilicon(usr))
-				usr:installed_modules()
-
-		if("store")
-			if(isrobot(usr))
-				var/mob/living/silicon/robot/R = usr
-				if(R.module)
-					R.uneq_active()
-					R.hud_used.update_robot_modules_display()
-				else
-					to_chat(R, "You haven't selected a module yet.")
-
-		if("module1")
-			if(istype(usr, /mob/living/silicon/robot))
-				usr:toggle_module(1)
-
-		if("module2")
-			if(istype(usr, /mob/living/silicon/robot))
-				usr:toggle_module(2)
-
-		if("module3")
-			if(istype(usr, /mob/living/silicon/robot))
-				usr:toggle_module(3)
 		else
 			return 0
 	return 1

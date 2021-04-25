@@ -167,8 +167,7 @@
 
 	return 1
 
-/obj/machinery/atmospherics/tvalve/attack_ai(mob/user as mob)
-	return
+
 
 /obj/machinery/atmospherics/tvalve/attack_hand(mob/user as mob)
 	src.add_fingerprint(usr)

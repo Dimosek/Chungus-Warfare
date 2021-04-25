@@ -115,8 +115,8 @@ client
 		if(!cast.len && !chunksize)
 			chunk += "CAST:"
 		var/job = ""
-		if(GetAssignment(H) != "Unassigned")
-			job = ", [uppertext(GetAssignment(H))]"
+		//if(GetAssignment(H) != "Unassigned")
+	//		job = ", [uppertext(GetAssignment(H))]"
 		var/used_name = H.real_name
 
 		/*

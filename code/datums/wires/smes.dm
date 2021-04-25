@@ -1,5 +1,4 @@
 /datum/wires/smes
-	holder_type = /obj/machinery/power/smes/buildable
 	wire_count = 5
 
 var/const/SMES_WIRE_RCON = 1		// Remote control (AI and consoles), cut to disable

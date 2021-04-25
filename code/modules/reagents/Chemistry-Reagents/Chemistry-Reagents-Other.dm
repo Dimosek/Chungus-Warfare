@@ -176,15 +176,6 @@
 	glass_name = "holy water"
 	glass_desc = "An ashen-obsidian-water mix, this solution will alter certain sections of the brain's rationality."
 
-/datum/reagent/water/holywater/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
-	..()
-	if(ishuman(M)) // Any location
-		if(iscultist(M))
-			if(prob(10))
-				cult.offer_uncult(M)
-			if(prob(2))
-				var/obj/effect/spider/spiderling/S = new /obj/effect/spider/spiderling(M.loc)
-				M.visible_message("<span class='warning'>\The [M] coughs up \the [S]!</span>")
 
 /datum/reagent/water/holywater/touch_turf(var/turf/T)
 	if(volume >= 5)

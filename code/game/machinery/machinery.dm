@@ -116,6 +116,19 @@ Class Procs:
 	var/clicksound			// sound played on succesful interface use by a carbon lifeform
 	var/clickvol = 40		// sound played on succesful interface use
 
+
+
+
+/obj/machinery/proc/attack_ai()
+	return//here just to remove some errors
+/obj/machinery/proc/use_power()
+	return
+/obj/machinery/proc/powered()
+	return TRUE
+/obj/machinery/proc/power_change()
+	return TRUE
+
+	
 /obj/machinery/Initialize(mapload, d=0)
 	. = ..()
 	if(d)

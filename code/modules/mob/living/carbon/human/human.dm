@@ -83,11 +83,6 @@
 		stat(uppertext(STAT_IQ), "[round(stats[STAT_IQ])]")
 		stat(uppertext(STAT_HT), "[round(stats[STAT_HT])]")
 
-		if(evacuation_controller)
-			var/eta_status = evacuation_controller.get_status_panel_eta()
-			if(eta_status)
-				stat(null, eta_status)
-
 		if (istype(internal))
 			if (!internal.air_contents)
 				qdel(internal)
@@ -178,24 +173,6 @@
 			loss_val = 0.05
 		temp.take_damage(b_loss * loss_val, f_loss * loss_val, used_weapon = weapon_message)
 
-/mob/living/carbon/human/proc/implant_loyalty(mob/living/carbon/human/M, override = FALSE) // Won't override by default.
-	if(!config.use_loyalty_implants && !override) return // Nuh-uh.
-
-	var/obj/item/weapon/implant/loyalty/L = new/obj/item/weapon/implant/loyalty(M)
-	L.imp_in = M
-	L.implanted = 1
-	var/obj/item/organ/external/affected = M.organs_by_name[BP_HEAD]
-	affected.implants += L
-	L.part = affected
-	L.implanted(src)
-
-/mob/living/carbon/human/proc/is_loyalty_implanted(mob/living/carbon/human/M)
-	for(var/L in M.contents)
-		if(istype(L, /obj/item/weapon/implant/loyalty))
-			for(var/obj/item/organ/external/O in M.organs)
-				if(L in O.implants)
-					return 1
-	return 0
 
 /mob/living/carbon/human/restrained()
 	if (handcuffed)
@@ -271,16 +248,6 @@
 	onclose(user, "mob[name]")
 	return
 
-// called when something steps onto a human
-// this handles mulebots and vehicles
-/mob/living/carbon/human/Crossed(var/atom/movable/AM)
-	if(istype(AM, /mob/living/bot/mulebot))
-		var/mob/living/bot/mulebot/MB = AM
-		MB.runOver(src)
-
-	if(istype(AM, /obj/vehicle))
-		var/obj/vehicle/V = AM
-		V.RunOver(src)
 
 // Get rank from ID, ID inside PDA, PDA, ID in wallet, etc.
 /mob/living/carbon/human/proc/get_authentification_rank(var/if_no_id = "No id", var/if_no_job = "No job")
@@ -354,9 +321,6 @@
 //Useful when player is being seen by other mobs
 /mob/living/carbon/human/proc/get_id_name(var/if_no_id = "Unknown")
 	. = if_no_id
-	if(istype(wear_id,/obj/item/device/pda))
-		var/obj/item/device/pda/P = wear_id
-		return P.owner
 	if(wear_id)
 		var/obj/item/weapon/card/id/I = wear_id.GetIdCard()
 		if(I)
@@ -463,117 +427,7 @@
 		if(!handle_strip(href_list["item"],usr,locate(href_list["holder"])))
 			show_inv(usr)
 
-	if (href_list["criminal"])
-		if(hasHUD(usr,"security"))
-
-			var/modified = 0
-			var/perpname = "wot"
-			if(wear_id)
-				var/obj/item/weapon/card/id/I = wear_id.GetIdCard()
-				if(I)
-					perpname = I.registered_name
-				else
-					perpname = name
-			else
-				perpname = name
-
-			var/datum/computer_file/crew_record/R = get_crewmember_record(perpname)
-			if(R)
-				var/setcriminal = input(usr, "Specify a new criminal status for this person.", "Security HUD", R.get_criminalStatus()) in GLOB.security_statuses as null|text
-				if(hasHUD(usr, "security") && setcriminal)
-					R.set_criminalStatus(setcriminal)
-					modified = 1
-
-					spawn()
-						BITSET(hud_updateflag, WANTED_HUD)
-						if(istype(usr,/mob/living/carbon/human))
-							var/mob/living/carbon/human/U = usr
-							U.handle_regular_hud_updates()
-						if(istype(usr,/mob/living/silicon/robot))
-							var/mob/living/silicon/robot/U = usr
-							U.handle_regular_hud_updates()
-
-			if(!modified)
-				to_chat(usr, "<span class='warning'>Unable to locate a data core entry for this person.</span>")
-	if (href_list["secrecord"])
-		if(hasHUD(usr,"security"))
-			var/perpname = "wot"
-			var/read = 0
-
-			if(wear_id)
-				if(istype(wear_id,/obj/item/weapon/card/id))
-					perpname = wear_id:registered_name
-				else if(istype(wear_id,/obj/item/device/pda))
-					var/obj/item/device/pda/tempPda = wear_id
-					perpname = tempPda.owner
-			else
-				perpname = src.name
-			var/datum/computer_file/crew_record/E = get_crewmember_record(perpname)
-			if(E)
-				if(hasHUD(usr,"security"))
-					to_chat(usr, "<b>Name:</b> [E.get_name()]")
-					to_chat(usr, "<b>Criminal Status:</b> [E.get_criminalStatus()]")
-					to_chat(usr, "<b>Details:</b> [pencode2html(E.get_criminalStatus())]")
-					read = 1
-
-			if(!read)
-				to_chat(usr, "<span class='warning'>Unable to locate a data core entry for this person.</span>")
-	if (href_list["medical"])
-		if(hasHUD(usr,"medical"))
-			var/perpname = "wot"
-			var/modified = 0
-
-			if(wear_id)
-				if(istype(wear_id,/obj/item/weapon/card/id))
-					perpname = wear_id:registered_name
-				else if(istype(wear_id,/obj/item/device/pda))
-					var/obj/item/device/pda/tempPda = wear_id
-					perpname = tempPda.owner
-			else
-				perpname = src.name
-
-			var/datum/computer_file/crew_record/E = get_crewmember_record(perpname)
-			if(E)
-				var/setmedical = input(usr, "Specify a new medical status for this person.", "Medical HUD", E.get_status()) in GLOB.physical_statuses as null|text
-				if(hasHUD(usr,"medical") && setmedical)
-					E.set_status(setmedical)
-					modified = 1
-
-					spawn()
-						if(istype(usr,/mob/living/carbon/human))
-							var/mob/living/carbon/human/U = usr
-							U.handle_regular_hud_updates()
-						if(istype(usr,/mob/living/silicon/robot))
-							var/mob/living/silicon/robot/U = usr
-							U.handle_regular_hud_updates()
-
-			if(!modified)
-				to_chat(usr, "<span class='warning'>Unable to locate a data core entry for this person.</span>")
-	if (href_list["medrecord"])
-		if(hasHUD(usr,"medical"))
-			var/perpname = "wot"
-			var/read = 0
-
-			if(wear_id)
-				if(istype(wear_id,/obj/item/weapon/card/id))
-					perpname = wear_id:registered_name
-				else if(istype(wear_id,/obj/item/device/pda))
-					var/obj/item/device/pda/tempPda = wear_id
-					perpname = tempPda.owner
-			else
-				perpname = src.name
-			var/datum/computer_file/crew_record/E = get_crewmember_record(perpname)
-			if(E)
-				if(hasHUD(usr,"medical"))
-					to_chat(usr, "<b>Name:</b> [E.get_name()]")
-					to_chat(usr, "<b>Gender:</b> [E.get_sex()]")
-					to_chat(usr, "<b>Species:</b> [E.get_species()]")
-					to_chat(usr, "<b>Blood Type:</b> [E.get_bloodtype()]")
-					to_chat(usr, "<b>Details:</b> [pencode2html(E.get_medRecord())]")
-					read = 1
-			if(!read)
-				to_chat(usr, "<span class='warning'>Unable to locate a data core entry for this person.</span>")
-
+	
 	if (href_list["lookitem"])
 		var/obj/item/I = locate(href_list["lookitem"])
 		if(I)

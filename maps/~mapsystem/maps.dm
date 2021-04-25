@@ -79,7 +79,7 @@ var/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	var/allowed_spawns = list("Arrivals Shuttle","Gateway", "Cryogenic Storage", "Cyborg Storage")
 	var/default_spawn = "Arrivals Shuttle"
 	var/flags = 0
-	var/evac_controller_type = /datum/evacuation_controller
+
 	var/use_overmap = 0		//If overmap should be used (including overmap space travel override)
 	var/overmap_size = 20		//Dimensions of overmap zlevel if overmap is used.
 	var/overmap_z = 0		//If 0 will generate overmap zlevel on init. Otherwise will populate the zlevel provided.
@@ -90,7 +90,6 @@ var/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	var/lobby_music/lobby_music                     // The track that will play in the lobby screen. Handed in the /setup_map() proc.
 	var/welcome_sound = 'sound/AI/welcome.ogg'		// Sound played on roundstart
 
-	var/default_law_type = /datum/ai_laws/nanotrasen  // The default lawset use by synth units, if not overriden by their laws var.
 	var/security_state = /decl/security_state/default // The default security state system to use.
 
 	var/id_hud_icons = 'icons/mob/hud.dmi' // Used by the ID HUD (primarily sechud) overlay.
@@ -196,14 +195,7 @@ var/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	report_progress("Finished loading away sites, remaining budget [away_site_budget], remaining sites [sites_by_spawn_weight.len]")
 #endif
 
-/datum/map/proc/build_exoplanets()
-	if(!use_overmap)
-		return
 
-	for(var/i = 0, i < num_exoplanets, i++)
-		var/exoplanet_type = pick(subtypesof(/obj/effect/overmap/sector/exoplanet))
-		var/obj/effect/overmap/sector/exoplanet/new_planet = new exoplanet_type(null, planet_size[1], planet_size[2])
-		new_planet.build_level()
 
 // Used to apply various post-compile procedural effects to the map.
 /datum/map/proc/refresh_mining_turfs(var/zlevel)
@@ -237,28 +229,6 @@ var/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 		empty_levels = list(world.maxz)
 	return pick(empty_levels)
 
-
-/datum/map/proc/setup_economy()
-	news_network.CreateFeedChannel("Nyx Daily", "SolGov Minister of Information", 1, 1)
-	news_network.CreateFeedChannel("The Gibson Gazette", "Editor Mike Hammers", 1, 1)
-
-	for(var/loc_type in typesof(/datum/trade_destination) - /datum/trade_destination)
-		var/datum/trade_destination/D = new loc_type
-		weighted_randomevent_locations[D] = D.viable_random_events.len
-		weighted_mundaneevent_locations[D] = D.viable_mundane_events.len
-
-	if(!station_account)
-		station_account = create_account("[station_name()] Primary Account", starting_money)
-
-	for(var/job in allowed_jobs)
-		var/datum/job/J = decls_repository.get_decl(job)
-		if(J.department)
-			station_departments |= J.department
-	for(var/department in station_departments)
-		department_accounts[department] = create_account("[department] Account", department_money)
-
-	department_accounts["Vendor"] = create_account("Vendor Account", 0)
-	vendor_account = department_accounts["Vendor"]
 
 /datum/map/proc/map_info(var/client/victim)
 	return

@@ -78,7 +78,6 @@ meteor_act
 	..(stun_amount, agony_amount, def_zone)
 
 /mob/living/carbon/human/getarmor(var/def_zone, var/type)
-	var/psi_mod = psi ? psi.get_armour(type) : 0
 	var/armorval = 0
 	var/total = 0
 
@@ -87,7 +86,7 @@ meteor_act
 			return getarmor_organ(def_zone, type)
 		var/obj/item/organ/external/affecting = get_organ(def_zone)
 		if(affecting)
-			return Clamp(psi_mod + getarmor_organ(isorgan(def_zone) ? def_zone : get_organ(def_zone), type),0,100)
+			return Clamp( getarmor_organ(isorgan(def_zone) ? def_zone : get_organ(def_zone), type),0,100)
 		//If a specific bodypart is targetted, check how that bodypart is protected and return the value.
 
 	//If you don't specify a bodypart, it checks ALL your bodyparts for protection, and averages out the values
@@ -98,7 +97,7 @@ meteor_act
 				var/weight = organ_rel_size[organ_name]
 				armorval += (getarmor_organ(organ, type) * weight) //use plain addition here because we are calculating an average
 				total += weight
-	return Clamp(psi_mod + (armorval/max(total, 1)),0,100)
+	return Clamp((armorval/max(total, 1)),0,100)
 
 //this proc returns the Siemens coefficient of electrical resistivity for a particular external organ.
 /mob/living/carbon/human/proc/get_siemens_coefficient_organ(var/obj/item/organ/external/def_zone)
@@ -153,10 +152,6 @@ meteor_act
 
 /mob/living/carbon/human/proc/check_shields(var/damage = 0, var/atom/damage_source = null, var/mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	var/obj/item/projectile/P = damage_source
-	if(istype(P) && !P.disrupts_psionics() && psi && P.starting && prob(psi.get_armour(P.check_armour) * 0.5) && psi.spend_power(round(damage/10)))
-		visible_message("<span class='danger'>\The [src] deflects [attack_text]!</span>")
-		P.redirect(P.starting.x + rand(-2,2), P.starting.y + rand(-2,2), get_turf(src), src)
-		return PROJECTILE_FORCE_MISS
 
 	for(var/obj/item/weapon/shield in list(l_hand, r_hand, wear_suit))
 		if(!shield) continue
@@ -324,12 +319,7 @@ meteor_act
 	if(user.skillcheck(user.skills["melee"], 0, null,"melee") == CRIT_SUCCESS)
 		resolve_critical_hit()
 
-	//Blood to gold
-	if(GLOB.all_religions["Gozag Ym Sagoz"].bloodgold)
-		var/datum/transaction/T = new("Gozag Ym Sagoz", "Blood money", -effective_force)
-		spawn_money(round(effective_force),src.loc,null)
-		mind.initial_account.do_transaction(T)
-	return 1
+
 
 /mob/living/carbon/human/proc/attack_bloody(obj/item/W, mob/living/attacker, var/effective_force, var/hit_zone)
 	if(W.damtype != BRUTE)

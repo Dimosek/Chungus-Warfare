@@ -218,22 +218,7 @@ var/list/gamemode_cache = list()
 
 	var/max_gear_cost = 10 // Used in chargen for accessory loadout limit. 0 disables loadout, negative allows infinite points.
 
-/datum/configuration/New()
-	var/list/L = typesof(/datum/game_mode) - /datum/game_mode
-	for (var/T in L)
-		// I wish I didn't have to instance the game modes in order to look up
-		// their information, but it is the only way (at least that I know of).
-		var/datum/game_mode/M = new T()
-		if (M.config_tag)
-			gamemode_cache[M.config_tag] = M // So we don't instantiate them repeatedly.
-			if(!(M.config_tag in modes))		// ensure each mode is added only once
-				log_misc("Adding game mode [M.name] ([M.config_tag]) to configuration.")
-				src.modes += M.config_tag
-				src.mode_names[M.config_tag] = M.name
-				src.probabilities[M.config_tag] = M.probability
-				if (M.votable)
-					src.votable_modes += M.config_tag
-	src.votable_modes += "secret"
+
 
 /datum/configuration/proc/load(filename, type = "config") //the type can also be game_options, in which case it uses a different switch. not making it separate to not copypaste code - Urist
 	var/list/Lines = file2list(filename)
@@ -540,9 +525,6 @@ var/list/gamemode_cache = list()
 
 				if("popup_admin_pm")
 					config.popup_admin_pm = 1
-
-				if("allow_holidays")
-					Holiday = 1
 
 				if("use_irc_bot")
 					use_irc_bot = 1

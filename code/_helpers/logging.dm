@@ -185,11 +185,7 @@
 		else if(M.name)
 			name = M.name
 
-
-		if(include_link && is_special_character(M) && highlight_special_characters)
-			. += "/(<font color='#ffa500'>[name]</font>)" //Orange
-		else
-			. += "/([name])"
+		. += "/([name])"
 
 	return .
 

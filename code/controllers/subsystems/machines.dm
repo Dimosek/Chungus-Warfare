@@ -58,7 +58,6 @@ SUBSYSTEM_DEF(machines)
 	 processing = machinery
 
 /datum/controller/subsystem/machines/Initialize(timeofday)
-	makepowernets()
 	setup_atmos_machinery(machinery)
 	fire()
 	..()
@@ -85,20 +84,6 @@ if(current_step == this_step || (check_resumed && !resumed)) {\
 
 #undef INTERNAL_PROCESS_STEP
 
-// rebuild all power networks from scratch - only called at world creation or by the admin verb
-// The above is a lie. Turbolifts also call this proc.
-/datum/controller/subsystem/machines/proc/makepowernets()
-	for(var/datum/powernet/PN in powernets)
-		qdel(PN)
-	powernets.Cut()
-	setup_powernets_for_cables(cable_list)
-
-/datum/controller/subsystem/machines/proc/setup_powernets_for_cables(list/cables)
-	for(var/obj/structure/cable/PC in cables)
-		if(!PC.powernet)
-			var/datum/powernet/NewPN = new()
-			NewPN.add_cable(PC)
-			propagate_network(PC,PC.powernet)
 
 datum/controller/subsystem/machines/proc/setup_atmos_machinery(list/machines)
 	set background=1

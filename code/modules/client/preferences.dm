@@ -218,22 +218,6 @@ datum/preferences
 				else if(status == "mechanical")
 					I.robotize()
 
-	QDEL_NULL_LIST(character.worn_underwear)
-	character.worn_underwear = list()
-
-	for(var/underwear_category_name in all_underwear)
-		var/datum/category_group/underwear/underwear_category = GLOB.underwear.categories_by_name[underwear_category_name]
-		if(underwear_category)
-			var/underwear_item_name = all_underwear[underwear_category_name]
-			var/datum/category_item/underwear/UWD = underwear_category.items_by_name[underwear_item_name]
-			var/metadata = all_underwear_metadata[underwear_category_name]
-			var/obj/item/underwear/UW = UWD.create_underwear(metadata)
-			if(UW)
-				UW.ForceEquipUnderwear(character, FALSE)
-		else
-			all_underwear -= underwear_category_name
-
-	character.backpack_setup = new(backpack, backpack_metadata["[backpack]"])
 
 	for(var/N in character.organs_by_name)
 		var/obj/item/organ/external/O = character.organs_by_name[N]
@@ -274,7 +258,6 @@ datum/preferences
 	character.med_record = med_record
 	character.sec_record = sec_record
 	character.gen_record = gen_record
-	character.exploit_record = exploit_record
 
 	character.home_system = home_system
 	character.citizenship = citizenship

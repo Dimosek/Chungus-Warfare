@@ -81,18 +81,6 @@ datum/announcement/priority/security/FormMessage(message as text, message_title 
 	. = "<font size=4 color='red'>[message_title]</font>"
 	. += "<br><font color='red'>[message]</font>"
 
-datum/announcement/proc/NewsCast(message as text, message_title as text)
-	if(!newscast)
-		return
-
-	var/datum/news_announcement/news = new
-	news.channel_name = channel_name
-	news.author = announcer
-	news.message = message
-	news.message_type = announcement_type
-	news.can_be_redacted = 0
-	announce_newscaster_news(news)
-
 /proc/GetNameAndAssignmentFromId(var/obj/item/weapon/card/id/I)
 	// Format currently matches that of newscaster feeds: Registered Name (Assigned Rank)
 	return I.assignment ? "[I.registered_name] ([I.assignment])" : I.registered_name

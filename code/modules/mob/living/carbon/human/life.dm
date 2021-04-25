@@ -1063,12 +1063,6 @@
 			holder.icon_state = "hudxeno"
 		else if(foundVirus)
 			holder.icon_state = "hudill"
-		else if(has_brain_worms())
-			var/mob/living/simple_animal/borer/B = has_brain_worms()
-			if(B.controlling)
-				holder.icon_state = "hudbrainworm"
-			else
-				holder.icon_state = "hudhealthy"
 		else
 			holder.icon_state = "hudhealthy"
 
@@ -1077,8 +1071,6 @@
 			holder2.icon_state = "huddead"
 		else if(status_flags & XENO_HOST)
 			holder2.icon_state = "hudxeno"
-		else if(has_brain_worms())
-			holder2.icon_state = "hudbrainworm"
 		else if(virus2.len)
 			holder2.icon_state = "hudill"
 		else
@@ -1099,53 +1091,7 @@
 
 		hud_list[ID_HUD] = holder
 
-	if (BITTEST(hud_updateflag, WANTED_HUD) && hud_list[WANTED_HUD])
-		var/image/holder = hud_list[WANTED_HUD]
-		holder.icon_state = "hudblank"
-		var/perpname = name
-		if(wear_id)
-			var/obj/item/weapon/card/id/I = wear_id.GetIdCard()
-			if(I)
-				perpname = I.registered_name
-
-		var/datum/computer_file/crew_record/E = get_crewmember_record(perpname)
-		if(E)
-			switch(E.get_criminalStatus())
-				if("Arrest")
-					holder.icon_state = "hudwanted"
-				if("Incarcerated")
-					holder.icon_state = "hudprisoner"
-				if("Parolled")
-					holder.icon_state = "hudparolled"
-				if("Released")
-					holder.icon_state = "hudreleased"
-		hud_list[WANTED_HUD] = holder
-
-	if (  BITTEST(hud_updateflag, IMPLOYAL_HUD) \
-	   || BITTEST(hud_updateflag,  IMPCHEM_HUD) \
-	   || BITTEST(hud_updateflag, IMPTRACK_HUD))
-
-		var/image/holder1 = hud_list[IMPTRACK_HUD]
-		var/image/holder2 = hud_list[IMPLOYAL_HUD]
-		var/image/holder3 = hud_list[IMPCHEM_HUD]
-
-		holder1.icon_state = "hudblank"
-		holder2.icon_state = "hudblank"
-		holder3.icon_state = "hudblank"
-
-		for(var/obj/item/weapon/implant/I in src)
-			if(I.implanted)
-				if(istype(I,/obj/item/weapon/implant/tracking))
-					holder1.icon_state = "hud_imp_tracking"
-				if(istype(I,/obj/item/weapon/implant/loyalty))
-					holder2.icon_state = "hud_imp_loyal"
-				if(istype(I,/obj/item/weapon/implant/chem))
-					holder3.icon_state = "hud_imp_chem"
-
-		hud_list[IMPTRACK_HUD] = holder1
-		hud_list[IMPLOYAL_HUD] = holder2
-		hud_list[IMPCHEM_HUD]  = holder3
-
+	
 	if (BITTEST(hud_updateflag, SPECIALROLE_HUD))
 		var/image/holder = hud_list[SPECIALROLE_HUD]
 		holder.icon_state = "hudblank"

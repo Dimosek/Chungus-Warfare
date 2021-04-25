@@ -335,7 +335,7 @@ Total Unsimulated Turfs: [world.maxx*world.maxy*world.maxz - simulated_turf_coun
 			merge(A.zone,B.zone)
 			return
 
-	var
+	var/
 		a_to_b = get_dir(A,B)
 		b_to_a = get_dir(B,A)
 

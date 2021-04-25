@@ -38,20 +38,6 @@
 	usr.show_message(t, 1)
 	feedback_add_details("admin_verb","ASL") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/client/proc/cmd_admin_robotize(var/mob/M in SSmobs.mob_list)
-	set category = "Fun"
-	set name = "Make Robot"
-
-	if(!ticker)
-		alert("Wait until the game starts")
-		return
-	if(istype(M, /mob/living/carbon/human))
-		log_admin("[key_name(src)] has robotized [M.key].")
-		spawn(10)
-			M:Robotize()
-
-	else
-		alert("Invalid mob")
 
 /client/proc/cmd_admin_animalize(var/mob/M in SSmobs.mob_list)
 	set category = "Fun"
@@ -74,32 +60,6 @@
 		M.Animalize()
 
 
-/client/proc/makepAI(var/turf/T in SSmobs.mob_list)
-	set category = "Fun"
-	set name = "Make pAI"
-	set desc = "Specify a location to spawn a pAI device, then specify a key to play that pAI"
-
-	var/list/available = list()
-	for(var/mob/C in SSmobs.mob_list)
-		if(C.key)
-			available.Add(C)
-	var/mob/choice = input("Choose a player to play the pAI", "Spawn pAI") in available
-	if(!choice)
-		return 0
-	if(!isghost(choice))
-		var/confirm = input("[choice.key] isn't ghosting right now. Are you sure you want to yank them out of them out of their body and place them in this pAI?", "Spawn pAI Confirmation", "No") in list("Yes", "No")
-		if(confirm != "Yes")
-			return 0
-	var/obj/item/device/paicard/card = new(T)
-	var/mob/living/silicon/pai/pai = new(card)
-	pai.SetName(sanitizeSafe(input(choice, "Enter your pAI name:", "pAI Name", "Personal AI") as text))
-	pai.real_name = pai.name
-	pai.key = choice.key
-	card.setPersonality(pai)
-	for(var/datum/paiCandidate/candidate in paiController.pai_candidates)
-		if(candidate.key == choice.key)
-			paiController.pai_candidates.Remove(candidate)
-	feedback_add_details("admin_verb","MPAI") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_slimeize(var/mob/M in SSmobs.mob_list)
 	set category = "Fun"
@@ -241,36 +201,6 @@
 	message_admins("[key_name_admin(src)] has turned aliens [config.aliens_allowed ? "on" : "off"].", 0)
 	feedback_add_details("admin_verb","TAL") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/client/proc/cmd_admin_grantfullaccess(var/mob/M in SSmobs.mob_list)
-	set category = "Admin"
-	set name = "Grant Full Access"
-
-	if (!ticker)
-		alert("Wait until the game starts")
-		return
-	if (istype(M, /mob/living/carbon/human))
-		var/mob/living/carbon/human/H = M
-		if (H.wear_id)
-			var/obj/item/weapon/card/id/id = H.wear_id
-			if(istype(H.wear_id, /obj/item/device/pda))
-				var/obj/item/device/pda/pda = H.wear_id
-				id = pda.id
-			id.icon_state = "gold"
-			id.access = get_all_accesses()
-		else
-			var/obj/item/weapon/card/id/id = new/obj/item/weapon/card/id(M);
-			id.icon_state = "gold"
-			id.access = get_all_accesses()
-			id.registered_name = H.real_name
-			id.assignment = "Captain"
-			id.SetName("[id.registered_name]'s ID Card ([id.assignment])")
-			H.equip_to_slot_or_del(id, slot_wear_id)
-			H.update_inv_wear_id()
-	else
-		alert("Invalid mob")
-	feedback_add_details("admin_verb","GFA") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
-	log_and_message_admins("has granted [M.key] full access.")
-
 /client/proc/cmd_assume_direct_control(var/mob/M in SSmobs.mob_list)
 	set category = "Admin"
 	set name = "Assume direct control"
@@ -316,11 +246,6 @@
 		var/area/A = get_area(APC)
 		if(!(A.type in areas_with_APC))
 			areas_with_APC.Add(A.type)
-
-	for(var/obj/machinery/alarm/alarm in world)
-		var/area/A = get_area(alarm)
-		if(!(A.type in areas_with_air_alarm))
-			areas_with_air_alarm.Add(A.type)
 
 	for(var/obj/machinery/requests_console/RC in world)
 		var/area/A = get_area(RC)
@@ -383,27 +308,6 @@
 	for(var/areatype in areas_without_camera)
 		log_debug("* [areatype]")
 
-/datum/admins/proc/cmd_admin_dress()
-	set category = "Fun"
-	set name = "Select equipment"
-
-	if(!check_rights(R_FUN))
-		return
-
-	var/mob/living/carbon/human/H = input("Select mob.", "Select equipment.") as null|anything in GLOB.human_mob_list
-	if(!H)
-		return
-
-	var/decl/hierarchy/outfit/outfit = input("Select outfit.", "Select equipment.") as null|anything in outfits()
-	if(!outfit)
-		return
-
-	var/reset_equipment = (outfit.flags&OUTFIT_RESET_EQUIPMENT)
-	if(!reset_equipment)
-		reset_equipment = alert("Do you wish to delete all current equipment first?", "Delete Equipment?","Yes", "No") == "Yes"
-
-	feedback_add_details("admin_verb","SEQ")
-	dressup_human(H, outfit, reset_equipment)
 
 /proc/dressup_human(var/mob/living/carbon/human/H, var/decl/hierarchy/outfit/outfit, var/undress = TRUE)
 	if(!H || !outfit)
@@ -412,77 +316,6 @@
 		H.delete_inventory(TRUE)
 	outfit.equip(H)
 	log_and_message_admins("changed the equipment of [key_name(H)] to [outfit.name].")
-
-/client/proc/startSinglo()
-	set category = "Debug"
-	set name = "Start Singularity"
-	set desc = "Sets up the singularity and all machines to get power flowing"
-
-	if(alert("Are you sure? This will start up the engine. Should only be used during debug!",,"Yes","No") != "Yes")
-		return
-
-	for(var/obj/machinery/power/emitter/E in world)
-		if(E.anchored)
-			E.active = 1
-
-	for(var/obj/machinery/field_generator/F in world)
-		if(F.anchored)
-			F.Varedit_start = 1
-	spawn(30)
-		for(var/obj/machinery/the_singularitygen/G in world)
-			if(G.anchored)
-				var/obj/singularity/S = new /obj/singularity(get_turf(G), 50)
-				spawn(0)
-					qdel(G)
-				S.energy = 1750
-				S.current_size = 7
-				S.icon = 'icons/effects/224x224.dmi'
-				S.icon_state = "singularity_s7"
-				S.pixel_x = -96
-				S.pixel_y = -96
-				S.grav_pull = 0
-				//S.consume_range = 3
-				S.dissipate = 0
-				//S.dissipate_delay = 10
-				//S.dissipate_track = 0
-				//S.dissipate_strength = 10
-
-	for(var/obj/machinery/power/rad_collector/Rad in world)
-		if(Rad.anchored)
-			if(!Rad.P)
-				var/obj/item/weapon/tank/phoron/Phoron = new/obj/item/weapon/tank/phoron(Rad)
-				Phoron.air_contents.gas["phoron"] = 70
-				Rad.drainratio = 0
-				Rad.P = Phoron
-				Phoron.loc = Rad
-
-			if(!Rad.active)
-				Rad.toggle_power()
-
-	for(var/obj/machinery/power/smes/SMES in world)
-		if(SMES.anchored)
-			SMES.input_attempt = 1
-
-/client/proc/cmd_debug_mob_lists()
-	set category = "Debug"
-	set name = "Debug Mob Lists"
-	set desc = "For when you just gotta know"
-
-	switch(input("Which list?") in list("Players","Admins","Mobs","Living Mobs","Dead Mobs", "Ghost Mobs", "Clients"))
-		if("Players")
-			to_chat(usr, jointext(GLOB.player_list,","))
-		if("Admins")
-			to_chat(usr, jointext(GLOB.admins,","))
-		if("Mobs")
-			to_chat(usr, jointext(SSmobs.mob_list,","))
-		if("Living Mobs")
-			to_chat(usr, jointext(GLOB.living_mob_list_,","))
-		if("Dead Mobs")
-			to_chat(usr, jointext(GLOB.dead_mob_list_,","))
-		if("Ghost Mobs")
-			to_chat(usr, jointext(GLOB.ghost_mob_list,","))
-		if("Clients")
-			to_chat(usr, jointext(GLOB.clients,","))
 
 // DNA2 - Admin Hax
 /client/proc/cmd_admin_toggle_block(var/mob/M,var/block)
@@ -548,30 +381,3 @@
 	plane = ABOVE_TURF_PLANE
 	layer = HOLOMAP_LAYER
 	alpha = 127
-
-/client/var/list/image/powernet_markers = list()
-/client/proc/visualpower()
-	set category = "Debug"
-	set name = "Visualize Powernets"
-
-	if(!check_rights(R_DEBUG)) return
-	visualpower_remove()
-	powernet_markers = list()
-
-	for(var/datum/powernet/PN in SSmachines.powernets)
-		var/netcolor = rgb(rand(100,255),rand(100,255),rand(100,255))
-		for(var/obj/structure/cable/C in PN.cables)
-			var/image/I = image('icons/effects/lighting_overlay.dmi', get_turf(C), "transparent")
-			I.plane = ABOVE_TURF_PLANE
-			I.alpha = 127
-			I.color = netcolor
-			I.maptext = "\ref[PN]"
-			powernet_markers += I
-	images += powernet_markers
-
-/client/proc/visualpower_remove()
-	set category = "Debug"
-	set name = "Remove Powernets Visuals"
-
-	images -= powernet_markers
-	QDEL_NULL_LIST(powernet_markers)

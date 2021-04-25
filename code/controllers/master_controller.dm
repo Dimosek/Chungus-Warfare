@@ -32,15 +32,13 @@ datum/controller/game_controller/New()
 
 	if(!syndicate_code_phrase)		syndicate_code_phrase	= generate_code_phrase()
 	if(!syndicate_code_response)	syndicate_code_response	= generate_code_phrase()
-	if(!accepted_prayer)			accepted_prayer = generate_random_prayer()  //Should probably datum-ize this, but don't want to now
 
 datum/controller/game_controller/proc/setup()
 	spawn(20)
 		createRandomZlevel()
 
 	setup_objects()
-	setupgenetics()
-	SetupXenoarch()
+
 
 	transfer_controller = new
 
@@ -53,10 +51,6 @@ datum/controller/game_controller/proc/setup_objects()
 	// Do these first since character setup will rely on them
 
 	initialization_stage |= INITIALIZATION_HAS_BEGUN
-
-	if(GLOB.using_map.use_overmap)
-		report_progress("Initializing overmap events")
-		overmap_event_handler.create_events(GLOB.using_map.overmap_z, GLOB.using_map.overmap_size, GLOB.using_map.overmap_event_areas)
 
 	report_progress("Initializing lathe recipes")
 	populate_lathe_recipes()

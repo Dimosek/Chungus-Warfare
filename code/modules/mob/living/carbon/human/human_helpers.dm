@@ -90,10 +90,6 @@
 	if(!. || !in_depth)
 		return
 
-	var/datum/computer_file/crew_record/R = get_crewmember_record(old_name)
-	if(R)
-		R.set_name(new_name)
-
 	//update our pda and id if we have them on our person
 	var/list/searching = GetAllContents(searchDepth = 3)
 	var/search_id = 1
@@ -106,11 +102,7 @@
 				ID.registered_name = new_name
 				ID.update_name()
 				search_id = 0
-		else if(search_pda && istype(A,/obj/item/device/pda))
-			var/obj/item/device/pda/PDA = A
-			if(PDA.owner == old_name)
-				PDA.set_owner(new_name)
-				search_pda = 0
+
 
 
 //Get species or synthetic temp if the mob is a FBP. Used when a synthetic type human mob is exposed to a temp check.

@@ -238,14 +238,6 @@ You can set verify to TRUE if you want send() to sleep until the client has the 
 		"tgui.js"	= 'tgui/assets/tgui.js'
 	)
 
-/datum/asset/simple/craft/register()
-	for(var/name in SScraft.categories)
-		for(var/datum/crafting_recipe/CR in SScraft.categories[name])
-			if(CR.result)
-				var/filename = sanitizeFileName("[CR.result[1]].png")
-				var/icon/I = getFlatTypeIcon(CR.result[1])
-				register_asset(filename, I)
-				assets[filename] = I
 
 /datum/asset/nanoui
 	var/list/common = list()

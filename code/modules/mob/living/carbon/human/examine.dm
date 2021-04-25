@@ -53,8 +53,6 @@
 	var/is_synth = isSynthetic()
 	if(!(skipjumpsuit && skipface))
 		var/species_name = "\improper "
-		if(is_synth && species.type != /datum/species/machine)
-			species_name += "Cyborg "
 		species_name += "[species.name]"
 //		msg += ", <b><font color='[species.get_flesh_colour(src)]'> \a [species_name]!</font></b>"
 	var/extra_species_text = species.get_additional_examine_text(src)
@@ -224,10 +222,6 @@
 	else if(nutrition >= 500)
 		msg += "[T.He] [T.is] quite chubby.\n"
 
-	for(var/datum/relation/family/R in matchmaker.get_relationships(user.mind))
-		if(name == R.connected_relation.relation_holder.current.name)
-			msg += "[name] is our [R.name]\n"
-	msg += "</span>"
 
 	var/ssd_msg = species.get_ssd(src)
 	if(ssd_msg && (!should_have_organ(BP_BRAIN) || has_brain()) && stat != DEAD)
@@ -336,47 +330,6 @@
 */
 
 
-	if(hasHUD(user,"security"))
-		var/perpname = "wot"
-		var/criminal = "None"
-
-		if(wear_id)
-			var/obj/item/weapon/card/id/I = wear_id.GetIdCard()
-			if(I)
-				perpname = I.registered_name
-			else
-				perpname = name
-		else
-			perpname = name
-
-		if(perpname)
-			var/datum/computer_file/crew_record/R = get_crewmember_record(perpname)
-			if(R)
-				criminal = R.get_criminalStatus()
-
-			msg += "<span class = 'deptradio'>Criminal status:</span> <a href='?src=\ref[src];criminal=1'>\[[criminal]\]</a>\n"
-			msg += "<span class = 'deptradio'>Security records:</span> <a href='?src=\ref[src];secrecord=`'>\[View\]</a>\n"
-
-	if(hasHUD(user,"medical"))
-		var/perpname = "wot"
-		var/medical = "None"
-
-		if(wear_id)
-			if(istype(wear_id,/obj/item/weapon/card/id))
-				perpname = wear_id:registered_name
-			else if(istype(wear_id,/obj/item/device/pda))
-				var/obj/item/device/pda/tempPda = wear_id
-				perpname = tempPda.owner
-		else
-			perpname = src.name
-
-		var/datum/computer_file/crew_record/R = get_crewmember_record(perpname)
-		if(R)
-			medical = R.get_status()
-
-		msg += "<span class = 'deptradio'>Physical status:</span> <a href='?src=\ref[src];medical=1'>\[[medical]\]</a>\n"
-		msg += "<span class = 'deptradio'>Medical records:</span> <a href='?src=\ref[src];medrecord=`'>\[View\]</a>\n"
-
 
 	if(print_flavor_text()) msg += "[print_flavor_text()]\n"
 
@@ -407,15 +360,6 @@
 					return istype(G.hud, /obj/item/clothing/glasses/hud/health) || istype(G, /obj/item/clothing/glasses/hud/health)
 				else
 					return FALSE
-			else
-				return 0
-	else if(istype(M, /mob/living/silicon/robot))
-		var/mob/living/silicon/robot/R = M
-		switch(hudtype)
-			if("security")
-				return istype(R.module_state_1, /obj/item/borg/sight/hud/sec) || istype(R.module_state_2, /obj/item/borg/sight/hud/sec) || istype(R.module_state_3, /obj/item/borg/sight/hud/sec)
-			if("medical")
-				return istype(R.module_state_1, /obj/item/borg/sight/hud/med) || istype(R.module_state_2, /obj/item/borg/sight/hud/med) || istype(R.module_state_3, /obj/item/borg/sight/hud/med)
 			else
 				return 0
 	else

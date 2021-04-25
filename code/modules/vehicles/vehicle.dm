@@ -155,8 +155,6 @@
 		if(was_on)
 			turn_on()
 
-/obj/vehicle/attack_ai(mob/user as mob)
-	return
 
 /obj/vehicle/unbuckle_mob(mob/user)
 	. = ..(user)

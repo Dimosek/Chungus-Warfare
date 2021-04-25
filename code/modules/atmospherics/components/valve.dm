@@ -125,9 +125,6 @@
 	else if(dir==12)
 		set_dir(4)
 
-/obj/machinery/atmospherics/valve/attack_ai(mob/user as mob)
-	return
-
 /obj/machinery/atmospherics/valve/attack_hand(mob/user as mob)
 	src.add_fingerprint(usr)
 	update_icon(1)

@@ -41,8 +41,6 @@ GLOBAL_LIST_EMPTY(facial_hair_styles_list) //stores /datum/sprite_accessory/faci
 var/global/list/skin_styles_female_list = list()		//unused
 GLOBAL_LIST_EMPTY(body_marking_styles_list)		//stores /datum/sprite_accessory/marking indexed by name
 
-GLOBAL_DATUM_INIT(underwear, /datum/category_collection/underwear, new())
-
 var/global/list/exclude_jobs = list(/datum/job/ai,/datum/job/cyborg)
 
 // Visual nets

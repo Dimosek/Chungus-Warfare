@@ -29,9 +29,6 @@
 	job_access_type = /datum/job/engineer
 
 
-/obj/item/weapon/card/id/dreyfus/chaplain
-	icon_state = "id_chaplain"
-	job_access_type = /datum/job/chaplain
 
 
 /obj/item/weapon/card/id/dreyfus/hos

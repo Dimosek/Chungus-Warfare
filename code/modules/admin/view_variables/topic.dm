@@ -373,52 +373,6 @@
 		else
 			to_chat(usr, "Mob doesn't know that language.")
 
-	else if(href_list["addverb"])
-		if(!check_rights(R_DEBUG))      return
-
-		var/mob/living/H = locate(href_list["addverb"])
-
-		if(!istype(H))
-			to_chat(usr, "This can only be done to instances of type /mob/living")
-			return
-		var/list/possibleverbs = list()
-		possibleverbs += "Cancel" 								// One for the top...
-		possibleverbs += typesof(/mob/proc,/mob/verb,/mob/living/proc,/mob/living/verb)
-		switch(H.type)
-			if(/mob/living/carbon/human)
-				possibleverbs += typesof(/mob/living/carbon/proc,/mob/living/carbon/verb,/mob/living/carbon/human/verb,/mob/living/carbon/human/proc)
-			if(/mob/living/silicon/robot)
-				possibleverbs += typesof(/mob/living/silicon/proc,/mob/living/silicon/robot/proc,/mob/living/silicon/robot/verb)
-			if(/mob/living/silicon/ai)
-				possibleverbs += typesof(/mob/living/silicon/proc,/mob/living/silicon/ai/proc,/mob/living/silicon/ai/verb)
-		possibleverbs -= H.verbs
-		possibleverbs += "Cancel" 								// ...And one for the bottom
-
-		var/verb = input("Select a verb!", "Verbs",null) as anything in possibleverbs
-		if(!H)
-			to_chat(usr, "Mob doesn't exist anymore")
-			return
-		if(!verb || verb == "Cancel")
-			return
-		else
-			H.verbs += verb
-
-	else if(href_list["remverb"])
-		if(!check_rights(R_DEBUG))      return
-
-		var/mob/H = locate(href_list["remverb"])
-
-		if(!istype(H))
-			to_chat(usr, "This can only be done to instances of type /mob")
-			return
-		var/verb = input("Please choose a verb to remove.","Verbs",null) as null|anything in H.verbs
-		if(!H)
-			to_chat(usr, "Mob doesn't exist anymore")
-			return
-		if(!verb)
-			return
-		else
-			H.verbs -= verb
 
 	else if(href_list["addorgan"])
 		if(!check_rights(R_SPAWN))	return

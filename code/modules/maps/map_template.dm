@@ -66,9 +66,6 @@
 	for (var/turf/T in turfs)
 		T.post_change()
 
-/datum/map_template/proc/init_shuttles()
-	for (var/shuttle_type in shuttles_to_initialise)
-		shuttle_controller.initialise_shuttle(shuttle_type)
 
 /datum/map_template/proc/load_new_z()
 
@@ -98,7 +95,6 @@
 
 	//initialize things that are normally initialized after map load
 	init_atoms(atoms_to_initialise)
-	init_shuttles()
 	log_game("Z-level [name] loaded at [x],[y],[world.maxz]")
 	loaded++
 
@@ -125,7 +121,7 @@
 
 	//initialize things that are normally initialized after map load
 	init_atoms(atoms_to_initialise)
-	init_shuttles()
+
 	log_game("[name] loaded at at [T.x],[T.y],[T.z]")
 	loaded++
 

@@ -183,21 +183,7 @@ var/world_topic_spam_protect_time = world.timeofday
 
 		return list2params(s)
 
-	else if(T == "manifest")
-		var/list/positions = list()
-		var/list/nano_crew_manifest = nano_crew_manifest()
-		// We rebuild the list in the format external tools expect
-		for(var/dept in nano_crew_manifest)
-			var/list/dept_list = nano_crew_manifest[dept]
-			if(dept_list.len > 0)
-				positions[dept] = list()
-				for(var/list/person in dept_list)
-					positions[dept][person["name"]] = person["rank"]
 
-		for(var/k in positions)
-			positions[k] = list2params(positions[k]) // converts positions["heads"] = list("Bob"="Captain", "Bill"="CMO") into positions["heads"] = "Bob=Captain&Bill=CMO"
-
-		return list2params(positions)
 
 	else if(T == "revision")
 		var/list/L = list()
@@ -214,55 +200,6 @@ var/world_topic_spam_protect_time = world.timeofday
 
 		return list2params(L)
 
-	else if(copytext(T,1,5) == "laws")
-		var/input[] = params2list(T)
-		if(input["key"] != config.comms_password)
-			if(world_topic_spam_protect_ip == addr && abs(world_topic_spam_protect_time - world.time) < 50)
-
-				spawn(50)
-					world_topic_spam_protect_time = world.time
-					return "Bad Key (Throttled)"
-
-			world_topic_spam_protect_time = world.time
-			world_topic_spam_protect_ip = addr
-
-			return "Bad Key"
-
-		var/list/match = text_find_mobs(input["laws"], /mob/living/silicon)
-
-		if(!match.len)
-			return "No matches"
-		else if(match.len == 1)
-			var/mob/living/silicon/S = match[1]
-			var/info = list()
-			info["name"] = S.name
-			info["key"] = S.key
-
-			if(!S.laws)
-				info["laws"] = null
-				return list2params(info)
-
-			var/list/lawset_parts = list(
-				"ion" = S.laws.ion_laws,
-				"inherent" = S.laws.inherent_laws,
-				"supplied" = S.laws.supplied_laws
-			)
-
-			for(var/law_type in lawset_parts)
-				var/laws = list()
-				for(var/datum/ai_law/L in lawset_parts[law_type])
-					laws += L.law
-				info[law_type] = list2params(laws)
-
-			info["zero"] = S.laws.zeroth_law ? S.laws.zeroth_law.law : null
-
-			return list2params(info)
-
-		else
-			var/list/ret = list()
-			for(var/mob/M in match)
-				ret[M.key] = M.name
-			return list2params(ret)
 
 	else if(copytext(T,1,5) == "info")
 		var/input[] = params2list(T)

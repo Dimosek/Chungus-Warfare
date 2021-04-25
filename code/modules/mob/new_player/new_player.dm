@@ -78,8 +78,6 @@
 			stat("Game Mode:", "[ticker.mode || master_mode][ticker.hide_mode ? " (Secret)" : ""]")
 		else
 			stat("Game Mode:", PUBLIC_GAME_MODE)
-		var/extra_antags = list2params(additional_antag_types)
-		stat("Added Antagonists:", extra_antags ? extra_antags : "None")
 
 		if(ticker.current_state == GAME_STATE_PREGAME)
 			stat("Time To Start:", "[ticker.pregame_timeleft][round_progressing ? "" : " (DELAYED)"]")
@@ -161,8 +159,6 @@
 			return
 		LateChoices() //show the latejoin job selection menu
 
-	if(href_list["manifest"])
-		ViewManifest()
 
 	if(href_list["SelectedJob"])
 		var/datum/job/job = job_master.GetJob(href_list["SelectedJob"])
@@ -298,7 +294,6 @@
 		return 0
 
 	character = job_master.EquipRank(character, job.title, 1)					//equips the human
-	equip_custom_items(character)
 
 	// AIs don't need a spawnpoint, they must spawn at an empty core
 
@@ -326,13 +321,6 @@
 	dat += "Round Duration: [roundduration2text()]<br>"
 
 
-	if(evacuation_controller.has_evacuated())
-		dat += "<font color='red'><b>The [station_name()] has been evacuated.</b></font><br>"
-	else if(evacuation_controller.is_evacuating())
-		if(evacuation_controller.emergency_evacuation) // Emergency shuttle is past the point of no recall
-			dat += "<font color='red'>The [station_name()] is currently undergoing evacuation procedures.</font><br>"
-		else                                           // Crew transfer initiated
-			dat += "<font color='red'>The [station_name()] is currently undergoing crew transfer procedures.</font><br>"
 
 	dat += "Choose from the following open/valid positions:<br>"
 	dat += "<a href='byond://?src=\ref[src];invalid_jobs=1'>[show_invalid_jobs ? "Hide":"Show"] unavailable jobs.</a><br>"
@@ -410,13 +398,6 @@
 	new_character.key = key		//Manually transfer the key to log them in
 	return new_character
 
-/mob/new_player/proc/ViewManifest()
-	var/dat = "<div align='center'>"
-	dat += html_crew_manifest(OOC = 1)
-	//src << browse(dat, "window=manifest;size=370x420;can_close=1")
-	var/datum/browser/popup = new(src, "Crew Manifest", "Crew Manifest", 370, 420, src)
-	popup.set_content(dat)
-	popup.open()
 
 /mob/new_player/Move()
 	return 0
