@@ -69,8 +69,8 @@ for reference:
 
 /obj/structure/barricade/steel
 	name = "steel barricade"
-	health = 300
-	maxhealth = 300
+	health = 200
+	maxhealth = 200
 	material_name = "steel"
 
 /obj/structure/barricade/New(var/newloc, var/new_material_name)

@@ -2,9 +2,10 @@
 	allowed_jobs = list(
 						/datum/job/reddit/chungus,
 						/datum/job/reddit/waifu,
+						/datum/job/reddit/moderator,
 						/datum/job/roblox/noob,
 						/datum/job/roblox/noob_medic,
-
+						/datum/job/roblox/builderman,
 						)
 
 /datum/job/reddit
@@ -28,6 +29,19 @@
 		..()
 		H.total_health = 500
 		H.maxHealth = 500
+/datum/job/reddit/moderator
+	title = "Reddit Moderator"
+	selection_color = "#f5851d"
+	sprite ='icons/mob/human_races/r_mod.dmi'
+	outfit_type = /decl/hierarchy/outfit/job/engineer
+
+
+	equip(var/mob/living/carbon/human/H)
+		H.generate_stats(STAT_HT)
+		H.generate_skills(list("engineering"))
+		..()
+
+
 
 /datum/job/reddit/waifu
 	title = "Waifu"
@@ -66,6 +80,19 @@
 
 		H.generate_stats(STAT_DX)
 		H.generate_skills(list("ranged"))
+		..()
+
+/datum/job/roblox/builderman
+	title = "Builderman"
+	selection_color = "#ffa600"
+	alt_titles = list("Guest")
+	outfit_type = /decl/hierarchy/outfit/job/engineer
+	sprite = 'icons/mob/human_races/r_roblox.dmi'
+
+	equip(var/mob/living/carbon/human/H)
+
+		H.generate_stats(STAT_DX)
+		H.generate_skills(list("engineering"))
 		..()
 
 
@@ -113,3 +140,12 @@
 /decl/hierarchy/outfit/job/chungus_medic/New()
 	..()
 	BACKPACK_OVERRIDE_MEDICAL
+
+
+
+
+/decl/hierarchy/outfit/job/engineer
+	name = OUTFIT_JOB_NAME("engineer")
+	backpack_contents = list(/obj/item/weapon/gun/projectile/revolver = 1,/obj/item/ammo_magazine/a357 = 2, /obj/item/stack/material/steel/fifty = 2)
+	head = /obj/item/clothing/head/hardhat
+		
