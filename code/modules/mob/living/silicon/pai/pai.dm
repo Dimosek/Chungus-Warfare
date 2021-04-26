@@ -84,7 +84,6 @@
 	status_flags |= NO_ANTAG
 	src.loc = paicard
 	card = paicard
-	sradio = new(src)
 
 	//As a human made device, we'll understand sol common without the need of the translator
 	add_language(LANGUAGE_SOL_COMMON, 1)
@@ -101,7 +100,7 @@
 		silicon_radio = card.radio
 
 /mob/living/silicon/pai/Destroy()
-	QDEL_NULL(sradio)
+	
 	card = null
 	silicon_radio = null // Because this radio actually belongs to another instance we simply null
 	. = ..()

@@ -95,10 +95,6 @@
 					"director", "Hello", "Hi!"," ","nuke","crate","dwarf","xeno")
 
 /datum/event/ionstorm/tick()
-	if(botEmagChance)
-		for(var/mob/living/bot/bot in world)
-			if(prob(botEmagChance))
-				bot.emag_act(1)
 
 /datum/event/ionstorm/end()
 	spawn(rand(5000,8000))

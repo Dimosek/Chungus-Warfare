@@ -62,9 +62,7 @@
 	icon_state = "cart-s"
 	access_security = 1
 
-/obj/item/weapon/cartridge/security/Initialize()
-	radio = new /obj/item/radio/integrated/beepsky(src)
-	. = ..()
+
 
 /obj/item/weapon/cartridge/detective
 	name = "\improper D.E.T.E.C.T. cartridge"
@@ -114,9 +112,6 @@
 	access_reagent_scanner = 1
 	access_atmos = 1
 
-/obj/item/weapon/cartridge/signal/Initialize()
-	radio = new /obj/item/radio/integrated/signal(src)
-	. = ..()
 
 /obj/item/weapon/cartridge/quartermaster
 	name = "\improper Space Parts & Space Vendors cartridge"
@@ -143,10 +138,6 @@
 	access_status_display = 1
 	access_security = 1
 
-/obj/item/weapon/cartridge/hos/Initialize()
-	radio = new /obj/item/radio/integrated/beepsky(src)
-	. = ..()
-
 /obj/item/weapon/cartridge/ce
 	name = "\improper Power-On DELUXE"
 	icon_state = "cart-ce"
@@ -168,9 +159,6 @@
 	access_reagent_scanner = 1
 	access_atmos = 1
 
-/obj/item/weapon/cartridge/rd/Initialize()
-	radio = new /obj/item/radio/integrated/signal(src)
-	. = ..()
 
 /obj/item/weapon/cartridge/captain
 	name = "\improper Value-PAK cartridge"
@@ -236,12 +224,6 @@
 	/*		Signaler (Mode: 40)				*/
 
 
-	if(istype(radio,/obj/item/radio/integrated/signal) && (mode==40))
-		var/obj/item/radio/integrated/signal/R = radio
-		values["signal_freq"] = format_frequency(R.frequency)
-		values["signal_code"] = R.code
-
-
 	/*		Station Display (Mode: 42)			*/
 
 	if(mode==42)
@@ -264,66 +246,7 @@
 		if(selected_sensor && MS)
 			values["sensor_reading"] = MS.return_reading_data()
 
-	/*		Security Bot Control (Mode: 46)		*/
 
-	if(mode==46)
-		var/botsData[0]
-		var/beepskyData[0]
-		if(istype(radio,/obj/item/radio/integrated/beepsky))
-			var/obj/item/radio/integrated/beepsky/SC = radio
-			beepskyData["active"] = SC.active
-			if(SC.active && !isnull(SC.botstatus))
-				var/area/loca = SC.botstatus["loca"]
-				var/loca_name = sanitize(loca.name)
-				beepskyData["botstatus"] = list("loca" = loca_name, "mode" = SC.botstatus["mode"])
-			else
-				beepskyData["botstatus"] = list("loca" = null, "mode" = -1)
-			var/botsCount=0
-			if(SC.botlist && SC.botlist.len)
-				for(var/mob/living/bot/B in SC.botlist)
-					botsCount++
-					if(B.loc)
-						botsData[++botsData.len] = list("Name" = sanitize(B.name), "Location" = sanitize(B.loc.loc.name), "ref" = "\ref[B]")
-
-			if(!botsData.len)
-				botsData[++botsData.len] = list("Name" = "No bots found", "Location" = "Invalid", "ref"= null)
-
-			beepskyData["bots"] = botsData
-			beepskyData["count"] = botsCount
-
-		else
-			beepskyData["active"] = 0
-			botsData[++botsData.len] = list("Name" = "No bots found", "Location" = "Invalid", "ref"= null)
-			beepskyData["botstatus"] = list("loca" = null, "mode" = null)
-			beepskyData["bots"] = botsData
-			beepskyData["count"] = 0
-
-		values["beepsky"] = beepskyData
-
-
-	/*		MULEBOT Control	(Mode: 48)		*/
-
-	if(mode==48)
-		var/mulebotsData[0]
-		var/count = 0
-
-		for(var/mob/living/bot/mulebot/M in GLOB.living_mob_list_)
-			if(!M.on)
-				continue
-			++count
-			var/muleData[0]
-			muleData["name"] = M.suffix
-			muleData["location"] = get_area(M)
-			muleData["paused"] = M.paused
-			muleData["home"] = M.homeName
-			muleData["target"] = M.targetName
-			muleData["ref"] = "\ref[M]"
-			muleData["load"] = M.load ? M.load.name : "Nothing"
-
-			mulebotsData[++mulebotsData.len] = muleData.Copy()
-
-		values["mulebotcount"] = count
-		values["mulebots"] = mulebotsData
 
 
 
@@ -365,133 +288,7 @@
 
 
 
-	/* 	Janitor Supplies Locator  (Mode: 49)      */
-	if(mode==49)
-		var/JaniData[0]
-		var/turf/cl = get_turf(src)
-
-		if(cl)
-			JaniData["user_loc"] = list("x" = cl.x, "y" = cl.y)
-		else
-			JaniData["user_loc"] = list("x" = 0, "y" = 0)
-		var/MopData[0]
-		for(var/obj/item/weapon/mop/M in world)
-			var/turf/ml = get_turf(M)
-			if(ml)
-				if(ml.z != cl.z)
-					continue
-				var/direction = get_dir(src, M)
-				MopData[++MopData.len] = list ("x" = ml.x, "y" = ml.y, "dir" = uppertext(dir2text(direction)), "status" = M.reagents.total_volume ? "Wet" : "Dry")
-
-		if(!MopData.len)
-			MopData[++MopData.len] = list("x" = 0, "y" = 0, dir=null, status = null)
-
-
-		var/BucketData[0]
-		for(var/obj/structure/mopbucket/B in world)
-			var/turf/bl = get_turf(B)
-			if(bl)
-				if(bl.z != cl.z)
-					continue
-				var/direction = get_dir(src,B)
-				BucketData[++BucketData.len] = list ("x" = bl.x, "y" = bl.y, "dir" = uppertext(dir2text(direction)), "status" = B.reagents.total_volume/100)
-
-		if(!BucketData.len)
-			BucketData[++BucketData.len] = list("x" = 0, "y" = 0, dir=null, status = null)
-
-		var/CbotData[0]
-		for(var/mob/living/bot/cleanbot/B in world)
-			var/turf/bl = get_turf(B)
-			if(bl)
-				if(bl.z != cl.z)
-					continue
-				var/direction = get_dir(src,B)
-				CbotData[++CbotData.len] = list("x" = bl.x, "y" = bl.y, "dir" = uppertext(dir2text(direction)), "status" = B.on ? "Online" : "Offline")
-
-
-		if(!CbotData.len)
-			CbotData[++CbotData.len] = list("x" = 0, "y" = 0, dir=null, status = null)
-		var/CartData[0]
-		for(var/obj/structure/janitorialcart/B in world)
-			var/turf/bl = get_turf(B)
-			if(bl)
-				if(bl.z != cl.z)
-					continue
-				var/direction = get_dir(src,B)
-				CartData[++CartData.len] = list("x" = bl.x, "y" = bl.y, "dir" = uppertext(dir2text(direction)), "status" = B.reagents.total_volume/100)
-		if(!CartData.len)
-			CartData[++CartData.len] = list("x" = 0, "y" = 0, dir=null, status = null)
-
-
-
-
-		JaniData["mops"] = MopData
-		JaniData["buckets"] = BucketData
-		JaniData["cleanbots"] = CbotData
-		JaniData["carts"] = CartData
-		values["janitor"] = JaniData
-
 	return values
 
 
 
-
-
-/obj/item/weapon/cartridge/Topic(href, href_list)
-	..()
-
-	if (!usr.canmove || usr.stat || usr.restrained() || !in_range(loc, usr))
-		usr.unset_machine()
-		usr << browse(null, "window=pda")
-		return
-
-
-
-
-	switch(href_list["choice"])
-		if("Send Signal")
-			spawn( 0 )
-				radio:send_signal("ACTIVATE")
-				return
-
-		if("Signal Frequency")
-			var/new_frequency = sanitize_frequency(radio:frequency + text2num(href_list["sfreq"]))
-			radio:set_frequency(new_frequency)
-
-		if("Signal Code")
-			radio:code += text2num(href_list["scode"])
-			radio:code = round(radio:code)
-			radio:code = min(100, radio:code)
-			radio:code = max(1, radio:code)
-
-		if("Status")
-			switch(href_list["statdisp"])
-				if("message")
-					post_status("message", message1, message2)
-				if("image")
-					post_status("image", href_list["image"])
-				if("setmsg1")
-					message1 = reject_bad_text(sanitize(input("Line 1", "Enter Message Text", message1) as text|null, 40), 40)
-					updateSelfDialog()
-				if("setmsg2")
-					message2 = reject_bad_text(sanitize(input("Line 2", "Enter Message Text", message2) as text|null, 40), 40)
-					updateSelfDialog()
-				else
-					post_status(href_list["statdisp"])
-
-		if("Power Select")
-			selected_sensor = href_list["target"]
-			loc:mode = 433
-			mode = 433
-		if("Power Clear")
-			selected_sensor = null
-			loc:mode = 43
-			mode = 43
-
-		if("MULEbot")
-			var/mob/living/bot/mulebot/M = locate(href_list["ref"])
-			if(istype(M))
-				M.obeyCommand(href_list["command"])
-
-
-	return 1

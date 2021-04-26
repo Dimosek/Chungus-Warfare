@@ -41,7 +41,7 @@
 "aO" = (/obj/item/weapon/gun/projectile/revolver/detective,/turf/unsimulated/floor/noob,/area/townhall/noob)
 "aP" = (/obj/item/weapon/melee/energy/blade,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
 "aQ" = (/obj/item/weapon/gun/projectile/revolver/mateba,/turf/unsimulated/floor/noob,/area/townhall/noob)
-"aR" = (/obj/item/weapon/melee/energy/axe,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
+"aR" = (/obj/item/weapon/melee/energy,/turf/unsimulated/floor/chungus,/area/townhall/chungus)
 "aS" = (/obj/item/weapon/melee/classic_baton,/turf/unsimulated/floor/noob,/area/townhall/noob)
 "aT" = (/obj/item/ammo_magazine/c50,/turf/unsimulated/floor/noob,/area/townhall/noob)
 "aU" = (/obj/item/ammo_magazine/a762,/turf/unsimulated/floor/noob,/area/townhall/noob)

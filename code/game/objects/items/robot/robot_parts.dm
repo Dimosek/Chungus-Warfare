@@ -133,19 +133,7 @@
 
 /obj/item/robot_parts/robot_suit/attackby(obj/item/W as obj, mob/user as mob)
 	..()
-	if(istype(W, /obj/item/stack/material) && W.get_material_name() == DEFAULT_WALL_MATERIAL && !parts[BP_L_ARM] && !parts[BP_R_ARM] && !parts[BP_L_LEG] && !parts[BP_R_LEG] && !parts[BP_CHEST] && !parts[BP_HEAD])
-		var/obj/item/stack/material/M = W
-		if (M.use(1))
-			var/obj/item/weapon/secbot_assembly/ed209_assembly/B = new /obj/item/weapon/secbot_assembly/ed209_assembly
-			B.loc = get_turf(src)
-			to_chat(user, "<span class='notice'>You armed the robot frame.</span>")
-			if (user.get_inactive_hand()==src)
-				user.remove_from_mob(src)
-				user.put_in_inactive_hand(B)
-			qdel(src)
-		else
-			to_chat(user, "<span class='warning'>You need one sheet of metal to arm the robot frame.</span>")
-
+	
 	if (istype(W, /obj/item/robot_parts))
 		var/obj/item/robot_parts/part = W
 		if(src.parts[part.bp_tag])	return

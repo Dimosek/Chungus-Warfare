@@ -35,12 +35,7 @@ var/list/mechtoys = list(
 	plane = ABOVE_HUMAN_PLANE
 	layer = ABOVE_HUMAN_LAYER
 	explosion_resistance = 5
-	var/list/mobs_can_pass = list(
-		/mob/living/bot,
-		/mob/living/carbon/slime,
-		/mob/living/simple_animal/mouse,
-		/mob/living/silicon/robot/drone
-		)
+
 
 /obj/structure/plasticflaps/CanPass(atom/A, turf/T)
 	if(istype(A) && A.checkpass(PASS_FLAG_GLASS))
@@ -57,9 +52,6 @@ var/list/mechtoys = list(
 	if(istype(M))
 		if(M.lying)
 			return ..()
-		for(var/mob_type in mobs_can_pass)
-			if(istype(A, mob_type))
-				return ..()
 		return issmall(M)
 
 	return ..()

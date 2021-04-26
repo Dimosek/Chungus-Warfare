@@ -8,6 +8,9 @@
 	var/list/other_connections = list("0", "0", "0", "0")
 	var/list/blend_objects = newlist() // Objects which to blend with
 	var/list/noblend_objects = newlist() //Objects to avoid blending with (such as children of listed blend objects.
+	var/health = 20
+	var/maxhealth= 20
+
 
 /obj/structure/Destroy()
 	if(parts)
@@ -48,7 +51,29 @@
 	attack_animation(user)
 	spawn(1) qdel(src)
 	return 1
+/obj/machinery/door/bullet_act(var/obj/item/projectile/Proj)
+	..()
+	
+	src.health -= Proj.damage
 
+	if (src.health <= 0)
+		visible_message("<span class='danger'>The [name] is smashed apart!</span>")
+		//dismantle()
+		qdel(src)
+		return
+	
+
+/obj/structure/attackby(obj/item/W as obj, mob/user as mob)
+
+	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	src.health -= W.force * 1
+
+	if (src.health <= 0)
+		visible_message("<span class='danger'>The [name] is smashed apart!</span>")
+		//dismantle()
+		qdel(src)
+		return
+	..()
 /obj/structure/proc/can_visually_connect()
 	return anchored
 

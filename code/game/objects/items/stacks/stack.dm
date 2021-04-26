@@ -122,7 +122,7 @@
 
 	if (recipe.time)
 		to_chat(user, "<span class='notice'>Building [recipe.title] ...</span>")
-		if (!do_after(user, (recipe.time*10)/user.skills[SKILL_ENG]))
+		if (!do_after(user, (recipe.time*30)/user.skills[SKILL_ENG]))
 			return
 
 	if (use(required))

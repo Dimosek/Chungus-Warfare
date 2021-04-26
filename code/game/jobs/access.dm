@@ -204,8 +204,6 @@
 		ghost_all_access = new()
 	return ghost_all_access
 
-/mob/living/bot/GetIdCard()
-	return botcard
 
 #define HUMAN_ID_CARDS list(get_active_hand(), wear_id, get_inactive_hand())
 /mob/living/carbon/human/GetIdCard()

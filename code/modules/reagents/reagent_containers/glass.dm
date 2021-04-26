@@ -22,13 +22,7 @@
 		/obj/machinery/chemical_dispenser,
 		/obj/machinery/reagentgrinder,
 		/obj/structure/table,
-		/obj/structure/closet,
-		/obj/structure/sink,
-		/obj/item/weapon/storage,
-		/obj/machinery/atmospherics/unary/cryo_cell,
-		/obj/item/weapon/grenade/chem_grenade,
-		/mob/living/bot/medbot,
-		/obj/item/weapon/storage/secure/safe,
+
 		/obj/structure/iv_drip,
 		/obj/machinery/disease2/incubator,
 		/obj/machinery/disposal,
@@ -230,7 +224,6 @@
 	if(isprox(D))
 		to_chat(user, "You add [D] to [src].")
 		qdel(D)
-		user.put_in_hands(new /obj/item/weapon/bucket_sensor)
 		user.drop_from_inventory(src)
 		qdel(src)
 		return

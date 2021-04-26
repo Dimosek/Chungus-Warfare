@@ -301,11 +301,11 @@
 
 /obj/item/medkit
 	name = "Med-Kit"
-	desc = "Medpack that conaints treatment for ever known injury"
+	desc = "Medpack that conaints treatment for ever known injury(15/15 uses)"
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "medbriefcase"
 	w_class = ITEM_SIZE_NORMAL
-
+	var/uses = 15
 
 /obj/item/medkit/attack(mob/living/carbon/M as mob, mob/user as mob)
 	if(..())
@@ -320,6 +320,10 @@
 		playsound(get_turf(src),sound(null,volume=100, channel=5), 50, 1)
 		M.revive()
 		user.visible_message("<span class='warning'>\The [user] heals [M]</span>", "<span class='warning'>You heal [M]</span>")
+		uses--
+		if( uses < 0 )
+			del(src)
+		desc = "Medpack that conaints treatment for ever known injury([uses]/15 uses)"
 
 	else
 		to_chat(user, "[M] is too far gone, i need to use a defiblilator or help them up with an empty hand")

@@ -53,11 +53,6 @@
 /decl/cardborg_appearance/standard
 	icon_state = "robot"
 
-/decl/cardborg_appearance/standard/satchel1
-	backpack_type = /obj/item/weapon/storage/backpack/satchel
-
-/decl/cardborg_appearance/standard/satchel2
-	backpack_type = /obj/item/weapon/storage/backpack/satchel/grey
 
 /decl/cardborg_appearance/engineering
 	icon_state = "engineerrobot"

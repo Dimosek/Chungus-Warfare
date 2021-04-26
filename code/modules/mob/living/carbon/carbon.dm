@@ -147,14 +147,19 @@
 		if(hand)	//This being 1 means the left hand is in use
 			hud_used.l_hand_hud_object.icon_state = "l_hand_active"
 			hud_used.r_hand_hud_object.icon_state = "r_hand_inactive"
+			r_hand.unwield(src)
+			l_hand.wield(src)
 		else
 			hud_used.l_hand_hud_object.icon_state = "l_hand_inactive"
 			hud_used.r_hand_hud_object.icon_state = "r_hand_active"
+			l_hand.unwield(src)
+			r_hand.wield(src)
 	if(hud_used.swaphands_hud_object)
 		if(hand)	//This being 1 means the left hand is in use
 			hud_used.swaphands_hud_object.dir = 2
 		else
 			hud_used.swaphands_hud_object.dir = 1
+	
 	return
 
 /mob/living/carbon/proc/activate_hand(var/selhand) //0 or "r" or "right" for right hand; 1 or "l" or "left" for left hand.
@@ -390,6 +395,7 @@
 	to_chat(src, "<span class='warning'>You slipped on [slipped_on]!</span>")
 	playsound(src.loc, 'sound/misc/slip.ogg', 50, 1, -3)
 	Weaken(Floor(stun_duration/2))
+	del(slipped_on)
 	return 1
 
 /mob/living/carbon/proc/add_chemical_effect(var/effect, var/magnitude = 1)

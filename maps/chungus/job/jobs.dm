@@ -146,6 +146,6 @@
 
 /decl/hierarchy/outfit/job/engineer
 	name = OUTFIT_JOB_NAME("engineer")
-	backpack_contents = list(/obj/item/weapon/gun/projectile/revolver = 1,/obj/item/ammo_magazine/a357 = 2, /obj/item/stack/material/steel/fifty = 2)
+	backpack_contents = list(/obj/item/weapon/gun/projectile/revolver = 1,/obj/item/ammo_magazine/a357 = 2, /obj/item/stack/material/steel/ten = 2)
 	head = /obj/item/clothing/head/hardhat
 		

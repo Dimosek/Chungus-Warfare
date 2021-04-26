@@ -6,7 +6,7 @@
 	layer = BELOW_OBJ_LAYER
 	w_class = ITEM_SIZE_NO_CONTAINER
 	var/state = 0
-	var/health = 200
+	health = 200
 	var/cover = 50 //how much cover the girder provides against projectiles.
 	var/material/reinf_material
 	var/reinforcing = 0
@@ -200,7 +200,7 @@
 	icon_state = "reinforced"
 	reinforcing = 0
 
-/obj/structure/girder/proc/dismantle()
+/obj/structure/girder/dismantle()
 	new /obj/item/stack/material/steel(get_turf(src))
 	qdel(src)
 

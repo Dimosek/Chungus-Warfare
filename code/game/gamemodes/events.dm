@@ -277,10 +277,6 @@ Would like to add a law like "Law x is _______" where x = a number, and _____ is
 					to_chat(M, "<br>")
 					M.add_ion_law("THE [uppertext(station_name())] IS [who2pref] [who2]")
 
-	if(botEmagChance)
-		for(var/mob/living/bot/bot in SSmachines.machinery)
-			if(prob(botEmagChance))
-				bot.emag_act(1)
 
 	/*
 

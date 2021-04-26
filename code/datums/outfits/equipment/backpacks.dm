@@ -21,9 +21,6 @@
 	name = "Satchel"
 	path = /obj/item/weapon/storage/backpack/satchel
 
-/decl/backpack_outfit/satchel/New()
-	..()
-	tweaks += new/datum/backpack_tweak/selection/specified_types_as_list(typesof(/obj/item/weapon/storage/backpack/satchel/leather) + /obj/item/weapon/storage/backpack/satchel/grey)
 
 /decl/backpack_outfit/messenger_bag
 	name = "Messenger bag"

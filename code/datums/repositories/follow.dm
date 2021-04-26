@@ -206,10 +206,6 @@
 	var/obj/effect/spider/spiderling/S = followed_instance
 	return ..() && S.amount_grown > 0
 
-/datum/follow_holder/bot
-	sort_order = 7
-	followed_type = /mob/living/bot
-	suffix = "Bot"
 
 /datum/follow_holder/mob
 	sort_order = 7

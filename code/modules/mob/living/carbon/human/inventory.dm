@@ -32,7 +32,9 @@ This saves us from having to call add_fingerprint() any time something is put in
 
 //Puts the item into our active hand if possible. returns 1 on success.
 /mob/living/carbon/human/put_in_active_hand(var/obj/item/W)
-	return (hand ? put_in_l_hand(W) : put_in_r_hand(W))
+	hand ? put_in_l_hand(W) : put_in_r_hand(W)
+	W.wield(src)
+	return
 
 //Puts the item into our inactive hand if possible. returns 1 on success.
 /mob/living/carbon/human/put_in_inactive_hand(var/obj/item/W)

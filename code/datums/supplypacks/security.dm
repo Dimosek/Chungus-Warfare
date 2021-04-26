@@ -307,31 +307,3 @@
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper Forensic equipment crate"
 	access = access_forensics_lockers
-
-/decl/hierarchy/supply_pack/security/securitybarriers
-	name = "Misc - Barrier crate"
-	contains = list(/obj/machinery/deployable/barrier = 4)
-	cost = 20
-	containertype = /obj/structure/closet/crate/secure/large
-	containername = "\improper Security barrier crate"
-	access = access_security
-
-/decl/hierarchy/supply_pack/security/securitybarriers
-	name = "Misc - Wall shield Generators"
-	contains = list(/obj/machinery/shieldwallgen = 2)
-	cost = 20
-	containertype = /obj/structure/closet/crate/secure/large
-	containername = "\improper wall shield generators crate"
-	access = access_brig
-
-/decl/hierarchy/supply_pack/security/securitybiosuit
-	name = "Misc - Security biohazard gear"
-	contains = list(/obj/item/clothing/head/bio_hood/security,
-					/obj/item/clothing/suit/bio_suit/security,
-					/obj/item/clothing/mask/gas,
-					/obj/item/weapon/tank/oxygen,
-					/obj/item/clothing/gloves/latex)
-	cost = 30
-	containertype = /obj/structure/closet/crate/secure
-	containername = "\improper Security biohazard gear crate"
-	access = access_security

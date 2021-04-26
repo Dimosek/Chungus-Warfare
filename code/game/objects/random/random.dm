@@ -512,76 +512,6 @@ obj/random/closet/spawn_choices()
 				/obj/item/weapon/tank/nitrogen = 1,
 				/obj/item/device/suit_cooling_unit = 1)
 
-/obj/random/material //Random materials for building stuff
-	name = "random material"
-	desc = "This is a random material."
-	icon = 'icons/obj/items.dmi'
-	icon_state = "sheet-metal"
-
-/obj/random/material/spawn_choices()
-	return list(/obj/item/stack/material/steel/ten,
-				/obj/item/stack/material/glass/ten,
-				/obj/item/stack/material/glass/reinforced/ten,
-				/obj/item/stack/material/plastic/ten,
-				/obj/item/stack/material/wood/ten,
-				/obj/item/stack/material/cardboard/ten,
-				/obj/item/stack/rods/ten,
-				/obj/item/stack/material/plasteel/ten,
-				/obj/item/stack/material/steel/fifty,
-				/obj/item/stack/material/glass/fifty,
-				/obj/item/stack/material/glass/reinforced/fifty,
-				/obj/item/stack/material/plastic/fifty,
-				/obj/item/stack/material/wood/fifty,
-				/obj/item/stack/material/cardboard/fifty,
-				/obj/item/stack/rods/fifty,
-				/obj/item/stack/material/plasteel/fifty)
-
-/obj/random/soap
-	name = "Random Cleaning Supplies"
-	desc = "This is a random bar of soap. Soap! SOAP?! SOAP!!!"
-	icon = 'icons/obj/items.dmi'
-	icon_state = "soap"
-
-/obj/random/soap/spawn_choices()
-	return list(/obj/item/weapon/soap = 4,
-				/obj/item/weapon/soap/nanotrasen = 3,
-				/obj/item/weapon/soap/deluxe = 3,
-				/obj/item/weapon/soap/syndie = 1,
-				/obj/item/weapon/soap/gold = 1,
-				/obj/item/weapon/reagent_containers/glass/rag = 2,
-				/obj/item/weapon/reagent_containers/spray/cleaner = 2,
-				/obj/item/weapon/grenade/chem_grenade/cleaner = 1)
-
-obj/random/obstruction //Large objects to block things off in maintenance
-	name = "random obstruction"
-	desc = "This is a random obstruction."
-	icon = 'icons/obj/cult.dmi'
-	icon_state = "cultgirder"
-
-obj/random/obstruction/spawn_choices()
-	return list(/obj/structure/barricade,
-				/obj/structure/girder,
-				/obj/structure/girder/displaced,
-				/obj/structure/girder/reinforced,
-				/obj/structure/grille,
-				/obj/structure/grille/broken,
-				/obj/structure/foamedmetal,
-				/obj/item/weapon/caution,
-				/obj/item/weapon/caution/cone,
-				/obj/structure/inflatable/wall,
-				/obj/structure/inflatable/door)
-
-/obj/random/assembly
-	name = "random assembly"
-	desc = "This is a random circuit assembly."
-	icon = 'icons/obj/items.dmi'
-	icon_state = "gift1"
-
-/obj/random/assembly/spawn_choices()
-	return list(/obj/item/device/electronic_assembly,
-				/obj/item/device/electronic_assembly/medium,
-				/obj/item/device/electronic_assembly/large,
-				/obj/item/device/electronic_assembly/drone)
 
 /obj/random/advdevice
 	name = "random advanced device"
@@ -691,18 +621,7 @@ obj/random/obstruction/spawn_choices()
 				/obj/item/weapon/storage/box/donkpockets = 3,
 				/obj/item/weapon/storage/box/sinpockets = 1,
 				/obj/item/weapon/storage/box/donut = 2,
-				/obj/item/weapon/storage/box/cups = 3,
-				/obj/item/weapon/storage/box/mousetraps = 4,
-				/obj/item/weapon/storage/box/engineer = 3,
-				/obj/item/weapon/storage/box/autoinjectors = 2,
-				/obj/item/weapon/storage/box/beakers = 3,
-				/obj/item/weapon/storage/box/syringes = 3,
-				/obj/item/weapon/storage/box/gloves = 3,
-				/obj/item/weapon/storage/box/large = 2,
-				/obj/item/weapon/storage/box/glowsticks = 3,
-				/obj/item/weapon/storage/wallet = 1,
-				/obj/item/weapon/storage/ore = 2,
-				/obj/item/weapon/storage/belt/utility/full = 2,
+
 				/obj/item/weapon/storage/belt/medical/emt = 2,
 				/obj/item/weapon/storage/belt/medical = 2,
 				/obj/item/weapon/storage/belt/security = 2,
@@ -903,23 +822,7 @@ something, make sure it's not in one of the other lists.*/
 				/obj/random/technology_scanner = 80,
 				/obj/random/bomb_supply = 80,
 				/obj/random/contraband = 1,
-				/obj/random/action_figure = 2,
-				/obj/random/plushie = 2,
-				/obj/random/material = 40,
-				/obj/random/coin = 5,
-				/obj/random/toy = 20,
-				/obj/random/tank = 20,
-				/obj/random/soap = 5,
-				/obj/random/drinkbottle = 5,
-				/obj/random/loot = 1,
-				/obj/random/advdevice = 50,
-				/obj/random/smokes = 30,
-				/obj/random/masks = 10,
-				/obj/random/snack = 60,
-				/obj/random/storage = 30,
-				/obj/random/shoes = 20,
-				/obj/random/gloves = 10,
-				/obj/random/glasses = 20,
+	
 				/obj/random/hat = 10,
 				/obj/random/suit = 20,
 				/obj/random/clothing = 30,

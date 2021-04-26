@@ -47,16 +47,11 @@
 
 /datum/random_map/noise/exoplanet/garbage/get_additional_spawns(var/value, var/turf/T)
 	..()
-	var/v = noise2value(value)
-	if(v > 5)
-		new/obj/structure/rubble/house(T)
-	else
-		if(prob(2))
-			new/obj/structure/rubble/war(T)
-		if(prob(0.02))
-			var/datum/artifact_find/A = new()
-			new A.artifact_find_type(T)
-			qdel(A)
+
+	if(prob(0.02))
+		var/datum/artifact_find/A = new()
+		new A.artifact_find_type(T)
+		qdel(A)
 
 /datum/random_map/noise/exoplanet/garbage/get_appropriate_path(var/value)
 	var/v = noise2value(value)

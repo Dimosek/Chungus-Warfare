@@ -267,7 +267,7 @@ var/list/mob/living/forced_ambiance_list = new
 	if(oldarea != newarea)
 		L.client.ambience_playing = 0
 	if(!L.client.ambience_playing)
-		L. << sound(pick(forced_ambience), repeat = 1, wait = 0, volume = 30, channel = 3)
+		L << sound(pick(forced_ambience), repeat = 1, wait = 0, volume = 10, channel = 3)
 		L.client.ambience_playing = 1
 
 

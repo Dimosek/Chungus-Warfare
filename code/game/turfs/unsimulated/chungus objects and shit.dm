@@ -92,3 +92,30 @@ obj/capturebt/attack_hand(mob/living/carbon/human/user)
 	else if(do_after(user, 1 SECONDS))
 		team = user.team
 		to_chat(world, "<br><br><H2> [name] has been captured by [user]([user.client]) for the team: [team]</H2>")
+
+
+
+
+
+obj/structure/dispenser
+	name = "Dispenser"
+	desc = "Gives engineers more resources"
+	icon = 'icons/obj/structures.dmi'
+	health = 25
+	maxhealth =25
+	icon_state = "dispenser"
+	anchored = 1
+	density = 1
+
+
+obj/structure/dispenser/New()
+	playsound(usr.loc, 'sound/items/dispenser.ogg',100)
+	DispenseLoop()
+	
+
+
+obj/structure/dispenser/proc/DispenseLoop()
+	while(TRUE)
+		var/obj/item/stack/material/wood/W = new /obj/item/stack/material/wood(loc)
+		W.amount = rand(1,10)
+		sleep(100)

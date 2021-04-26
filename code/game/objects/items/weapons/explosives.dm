@@ -46,9 +46,10 @@
 	if (ismob(target) || istype(target, /turf/unsimulated) || istype(target, /turf/simulated/shuttle) || istype(target, /obj/item/weapon/storage/) || istype(target, /obj/item/clothing/accessory/storage/) || istype(target, /obj/item/clothing/under))
 		return
 	to_chat(user, "Planting explosives...")
+	playsound(usr.loc, 'sound/items/thermite.ogg',200)
 	user.do_attack_animation(target)
 
-	if(do_after(user, 50, target) && in_range(user, target))
+	if(do_after(user, 200/user.skills[SKILL_ENG], target) && in_range(user, target))
 		user.drop_item()
 		src.target = target
 		forceMove(null)
@@ -72,7 +73,7 @@
 	if(!target)
 		target = src
 	if(location)
-		explosion(location, -1, -1, 2, 3)
+		explosion(location, 2, 2, 3, 4)
 
 	if(target)
 		if (istype(target, /turf/simulated/wall))

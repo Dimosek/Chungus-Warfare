@@ -101,13 +101,6 @@ var/datum/antagonist/raider/raiders
 	..()
 	raiders = src
 
-/datum/antagonist/raider/update_access(var/mob/living/player)
-	for(var/obj/item/weapon/storage/wallet/W in player.contents)
-		for(var/obj/item/weapon/card/id/id in W.contents)
-			id.SetName("[player.real_name]'s Passport")
-			id.registered_name = player.real_name
-			W.SetName("[initial(W.name)] ([id.name])")
-
 /datum/antagonist/raider/create_global_objectives()
 
 	if(!..())
@@ -192,44 +185,6 @@ var/datum/antagonist/raider/raiders
 			return 0
 	return 1
 
-/datum/antagonist/raider/equip(var/mob/living/carbon/human/player)
-
-	if(!..())
-		return 0
-
-	if(player.species && player.species.get_bodytype(player) == SPECIES_VOX)
-		equip_vox(player)
-	else
-		var/new_shoes =   pick(raider_shoes)
-		var/new_uniform = pick(raider_uniforms)
-		var/new_glasses = pick(raider_glasses)
-		var/new_helmet =  pick(raider_helmets)
-		var/new_suit =    pick(raider_suits)
-
-		player.equip_to_slot_or_del(new new_shoes(player),slot_shoes)
-		if(!player.shoes)
-			//If equipping shoes failed, fall back to equipping sandals
-			var/fallback_type = pick(/obj/item/clothing/shoes/sandal, /obj/item/clothing/shoes/jackboots/unathi)
-			player.equip_to_slot_or_del(new fallback_type(player), slot_shoes)
-
-		player.equip_to_slot_or_del(new new_uniform(player),slot_w_uniform)
-		player.equip_to_slot_or_del(new new_glasses(player),slot_glasses)
-		player.equip_to_slot_or_del(new new_helmet(player),slot_head)
-		player.equip_to_slot_or_del(new new_suit(player),slot_wear_suit)
-		player.generate_stats(STAT_ST)
-		player.generate_skills("melee", "ranged")
-		equip_weapons(player)
-
-	var/obj/item/weapon/card/id/id = create_id("Visitor", player, equip = 0)
-	id.SetName("[player.real_name]'s Passport")
-	id.assignment = "Visitor"
-	var/obj/item/weapon/storage/wallet/W = new(player)
-	W.handle_item_insertion(id)
-	player.equip_to_slot_or_del(W, slot_wear_id)
-	spawn_money(rand(50,150)*10,W)
-	create_radio(RAID_FREQ, player)
-
-	return 1
 
 /datum/antagonist/raider/proc/equip_weapons(var/mob/living/carbon/human/player)
 	var/new_gun = pick(raider_guns)

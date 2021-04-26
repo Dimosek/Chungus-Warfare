@@ -262,7 +262,7 @@
 	ammo_type = /obj/item/ammo_casing/a556
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/box/a556
-	allowed_magazines = list(/obj/item/ammo_magazine/box/a556, /obj/item/ammo_magazine/c556)
+	allowed_magazines = list(/obj/item/ammo_magazine/box/a556)
 	one_hand_penalty = 6
 	wielded_item_state = "gun_wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/lmg_magin.ogg'
@@ -272,13 +272,13 @@
 	//No single-shot or 3-round-burst modes since using this weapon should come at a cost to flexibility.
 	firemodes = list(
 		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2),          dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2)),
-		list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
+		list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(-5,-1,-1,-2,-2,-2,-3,-5), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
 		)
 
 	var/cover_open = 0
 
 /obj/item/weapon/gun/projectile/automatic/l6_saw/mag
-	magazine_type = /obj/item/ammo_magazine/c556
+	magazine_type = /obj/item/ammo_magazine/box/a556
 
 /obj/item/weapon/gun/projectile/automatic/l6_saw/special_check(mob/user)
 	if(cover_open)

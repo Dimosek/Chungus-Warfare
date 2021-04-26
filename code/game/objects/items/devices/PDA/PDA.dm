@@ -416,15 +416,6 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		if(mode in cartmodes)
 			data["records"] = cartridge.create_NanoUI_values()
 
-		if(mode == 0)
-			cartdata["name"] = cartridge.name
-			if(isnull(cartridge.radio))
-				cartdata["radio"] = 0
-			else
-				if(istype(cartridge.radio, /obj/item/radio/integrated/beepsky))
-					cartdata["radio"] = 1
-				if(istype(cartridge.radio, /obj/item/radio/integrated/signal))
-					cartdata["radio"] = 2
 
 		if(mode == 2)
 			cartdata["charges"] = cartridge.charges ? cartridge.charges : 0

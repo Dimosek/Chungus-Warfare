@@ -8,10 +8,8 @@
 	layer = SIDE_WINDOW_LAYER
 	anchored = 1.0
 	atom_flags = ATOM_FLAG_CHECKS_BORDER
-	var/maxhealth = 14.0
 	var/maximal_heat = T0C + 100 		// Maximal heat before this window begins taking damage from fire
 	var/damage_per_fire_tick = 2.0 		// Amount of damage per fire tick. Regular windows are not fireproof so they might as well break quickly.
-	var/health
 	var/ini_dir = null
 	var/state = 2
 	var/reinf = 0
@@ -23,7 +21,7 @@
 
 	atmos_canpass = CANPASS_PROC
 
-/obj/structure/window/examine(mob/user)
+/obj/structure/examine(mob/user)
 	. = ..(user)
 
 	if(health == maxhealth)
@@ -38,13 +36,7 @@
 			to_chat(user, "<span class='warning'>It looks moderately damaged.</span>")
 		else
 			to_chat(user, "<span class='danger'>It looks heavily damaged.</span>")
-	if(silicate)
-		if (silicate < 30)
-			to_chat(user, "<span class='notice'>It has a thin layer of silicate.</span>")
-		else if (silicate < 70)
-			to_chat(user, "<span class='notice'>It is covered in silicate.</span>")
-		else
-			to_chat(user, "<span class='notice'>There is a thick layer of silicate covering it.</span>")
+	
 
 /obj/structure/window/proc/take_damage(var/damage = 0,  var/sound_effect = 1)
 	var/initialhealth = health

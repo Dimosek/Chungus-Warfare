@@ -60,40 +60,6 @@
 			When in hacking mode this device will grant full access to any standard airlock within 20 to 40 seconds. \
 			This device will also be able to immediately access the last 6 to 8 hacked airlocks."
 
-/datum/uplink_item/item/tools/space_suit
-	name = "Space Suit"
-	item_cost = 28
-	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/space
-
-/datum/uplink_item/item/tools/thermal
-	name = "Thermal Imaging Glasses"
-	item_cost = 24
-	path = /obj/item/clothing/glasses/thermal/syndi
-
-/datum/uplink_item/item/tools/flashdark
-	name = "Flashdark"
-	item_cost = 32
-	path = /obj/item/device/flashlight/flashdark
-
-/datum/uplink_item/item/tools/powersink
-	name = "Powersink (DANGER!)"
-	item_cost = 40
-	path = /obj/item/device/powersink
-
-/datum/uplink_item/item/tools/teleporter
-	name = "Teleporter Circuit Board"
-	item_cost = 40
-	path = /obj/item/weapon/circuitboard/teleporter
-
-/datum/uplink_item/item/tools/teleporter/New()
-	..()
-	antag_roles = list(MODE_MERCENARY)
-
-/datum/uplink_item/item/tools/ai_module
-	name = "Hacked AI Upload Module"
-	item_cost = 52
-	path = /obj/item/weapon/aiModule/syndicate
-
 /datum/uplink_item/item/tools/supply_beacon
 	name = "Hacked Supply Beacon (DANGER!)"
 	item_cost = 52

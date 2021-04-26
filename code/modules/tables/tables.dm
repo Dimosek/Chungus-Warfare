@@ -9,8 +9,6 @@
 	layer = TABLE_LAYER
 	throwpass = 1
 	var/flipped = 0
-	var/maxhealth = 10
-	var/health = 10
 
 	// For racks.
 	var/can_reinforce = 1
@@ -267,7 +265,7 @@
 /obj/structure/table/proc/remove_material(obj/item/weapon/wrench/W, mob/user)
 	material = common_material_remove(user, material, 20, "plating", "bolts", 'sound/items/Ratchet.ogg')
 
-/obj/structure/table/proc/dismantle(obj/item/weapon/wrench/W, mob/user)
+/obj/structure/table/dismantle(obj/item/weapon/wrench/W, mob/user)
 	if(manipulating) return
 	manipulating = 1
 	user.visible_message("<span class='notice'>\The [user] begins dismantling \the [src].</span>",
