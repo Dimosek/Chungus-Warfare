@@ -1,0 +1,197 @@
+"aa" = (/turf/simulated/wall/iron,/area/townhall/chungus)
+"ab" = (/turf/unsimulated/beach/water,/area/maintenance)
+"ac" = (/turf/unsimulated/floor/noob,/area/townhall/noob)
+"ad" = (/turf/simulated/wall/iron,/area/townhall/noob)
+"ae" = (/obj/machinery/light/chungus_shrine,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"af" = (/turf/simulated/floor/tiled,/area/townhall/chungus)
+"ag" = (/obj/item/clothing/head/helmet/siege,/obj/item/clothing/head/helmet/siege,/obj/item/clothing/head/helmet/siege,/obj/item/clothing/head/helmet/siege,/turf/simulated/floor/tiled,/area/townhall/noob)
+"ah" = (/obj/item/clothing/head/helmet/siege,/obj/item/clothing/head/helmet/siege,/obj/item/clothing/head/helmet/siege,/obj/item/clothing/head/helmet/siege,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"ai" = (/obj/old_god_shrine/greed_shrine,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aj" = (/obj/old_god_shrine/messiah_shrine,/turf/simulated/floor/tiled,/area/townhall/noob)
+"ak" = (/turf/simulated/floor/tiled,/area/townhall/noob)
+"al" = (/obj/machinery/light/noob_shrine,/turf/simulated/floor/tiled,/area/townhall/noob)
+"am" = (/obj/random/medical,/obj/random/medical,/obj/random/medical,/obj/random/medical,/turf/simulated/floor/tiled,/area/maintenance)
+"an" = (/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/obj/item/clothing/glasses/tacgoggles,/turf/simulated/floor/tiled,/area/townhall/noob)
+"ao" = (/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/turf/simulated/floor/tiled,/area/townhall/noob)
+"ap" = (/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/obj/item/clothing/glasses/night,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aq" = (/obj/item/clothing/head/beret/guard,/obj/item/clothing/head/beret/guard,/obj/item/clothing/head/beret/guard,/turf/simulated/floor/tiled,/area/townhall/noob)
+"ar" = (/obj/structure/closet/crate,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"as" = (/obj/structure/closet/crate,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"at" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/turf/simulated/floor/tiled,/area/townhall/noob)
+"au" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/obj/item/weapon/gun/projectile/automatic/z8,/turf/simulated/floor/tiled,/area/townhall/noob)
+"av" = (/obj/structure/closet/crate,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/obj/item/weapon/gun/launcher/rocket,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aw" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/obj/item/weapon/gun/projectile/automatic/l6_saw/mag,/turf/simulated/floor/tiled,/area/townhall/noob)
+"ax" = (/obj/structure/closet/crate,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/turf/simulated/floor/tiled,/area/townhall/noob)
+"ay" = (/obj/item/clothing/shoes/jackboots,/obj/item/clothing/shoes/jackboots,/obj/item/clothing/shoes/jackboots,/obj/item/clothing/shoes/jackboots,/obj/item/clothing/shoes/jackboots,/obj/item/clothing/shoes/jackboots,/obj/item/clothing/shoes/jackboots,/obj/item/clothing/shoes/jackboots,/obj/item/clothing/shoes/jackboots,/obj/item/clothing/shoes/jackboots,/obj/item/clothing/shoes/jackboots,/turf/simulated/floor/tiled,/area/townhall/noob)
+"az" = (/obj/item/clothing/head/beret/guard,/obj/item/clothing/head/beret/guard,/obj/item/clothing/head/beret/guard,/obj/item/clothing/head/beret/guard,/obj/item/clothing/head/beret/guard,/obj/item/clothing/head/beret/guard,/obj/item/clothing/head/beret/guard,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aA" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"aB" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/obj/item/ammo_magazine/c556,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"aC" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/obj/item/weapon/melee/energy/sword/blue,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"aD" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"aE" = (/obj/item/clothing/under/tactical,/obj/item/clothing/under/tactical,/obj/item/clothing/under/tactical,/obj/item/clothing/under/tactical,/obj/item/clothing/under/tactical,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aF" = (/obj/item/clothing/under/tactical,/obj/item/clothing/under/tactical,/obj/item/clothing/under/tactical,/obj/item/clothing/under/tactical,/obj/item/clothing/under/tactical,/obj/item/clothing/under/tactical,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aG" = (/obj/effect/landmark/start{name = "Noob"},/turf/simulated/floor/tiled,/area/townhall/noob)
+"aH" = (/obj/item/clothing/head/nun_hood,/obj/item/clothing/head/nun_hood,/obj/item/clothing/head/nun_hood,/obj/item/clothing/head/nun_hood,/obj/item/clothing/head/nun_hood,/obj/item/clothing/suit/nun,/obj/item/clothing/suit/nun,/obj/item/clothing/suit/nun,/obj/item/clothing/suit/nun,/obj/item/clothing/suit/nun,/obj/item/clothing/suit/nun,/obj/item/clothing/suit/nun,/obj/item/clothing/suit/nun,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aI" = (/obj/effect/landmark/start{name = "Chungus"},/turf/simulated/floor/tiled,/area/townhall/chungus)
+"aJ" = (/obj/structure/closet/crate,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"aK" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/obj/item/ammo_magazine/a762,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aL" = (/obj/structure/closet/crate,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/obj/item/ammo_casing/rocket,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aM" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/obj/item/ammo_magazine/box/a556,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aN" = (/obj/structure/closet/crate,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aO" = (/obj/item/clothing/head/nursehat,/obj/item/clothing/head/nursehat,/obj/item/clothing/head/nursehat,/obj/item/clothing/head/nursehat,/obj/item/clothing/head/nursehat,/obj/item/clothing/head/nursehat,/obj/item/clothing/head/nursehat,/obj/item/clothing/head/nursehat,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aP" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"aQ" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/obj/item/weapon/gun/projectile/automatic/sts35,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"aR" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/obj/item/weapon/melee/energy/sword/pirate,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"aS" = (/obj/structure/closet/crate,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/obj/item/weapon/melee/energy/axe,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"aT" = (/obj/item/clothing/under/tactical,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aU" = (/obj/item/clothing/head/rabbitears,/obj/item/clothing/head/rabbitears,/obj/item/clothing/head/rabbitears,/obj/item/clothing/head/rabbitears,/obj/item/clothing/head/rabbitears,/obj/item/clothing/head/rabbitears,/obj/item/clothing/head/rabbitears,/obj/item/clothing/under/schoolgirl,/obj/item/clothing/under/schoolgirl,/obj/item/clothing/under/schoolgirl,/obj/item/clothing/under/schoolgirl,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aV" = (/obj/random/medical,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aW" = (/obj/effect/decal/cleanable/cum,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aX" = (/obj/effect/decal/cleanable/cum,/obj/item/clothing/gloves/undertaker,/obj/item/clothing/gloves/undertaker,/obj/item/clothing/shoes/jackboots,/obj/item/clothing/suit/undertaker,/obj/item/clothing/under/sterile,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aY" = (/obj/item/clothing/mask/gas/undertaker,/turf/simulated/floor/tiled,/area/townhall/noob)
+"aZ" = (/obj/random/medical,/obj/random/medical,/obj/random/medical,/obj/random/medical,/turf/simulated/floor/tiled,/area/townhall/noob)
+"ba" = (/obj/machinery/light/noob_shrine,/turf/simulated/wall/iron,/area/townhall/noob)
+"bb" = (/obj/random/handgun,/obj/random/handgun,/obj/random/handgun,/obj/random/handgun,/obj/random/handgun,/obj/random/handgun,/turf/simulated/floor/tiled,/area/townhall/noob)
+"bc" = (/obj/effect/decal/cleanable/cum,/obj/random/energy,/obj/random/energy,/obj/random/energy,/obj/random/energy,/obj/random/energy,/turf/simulated/floor/tiled,/area/townhall/noob)
+"bd" = (/obj/random/masks,/obj/random/masks,/obj/random/masks,/obj/random/masks,/turf/simulated/floor/tiled,/area/townhall/noob)
+"be" = (/obj/random/voidhelmet,/obj/random/voidhelmet,/obj/random/voidhelmet,/obj/random/voidhelmet,/obj/random/voidhelmet,/obj/random/voidhelmet,/turf/simulated/floor/tiled,/area/townhall/noob)
+"bf" = (/obj/machinery/light/chungus_shrine,/turf/simulated/wall/iron,/area/townhall/chungus)
+"bg" = (/obj/item/weapon/gun/energy/captain,/obj/item/weapon/gun/energy/captain,/obj/item/weapon/gun/energy/captain,/obj/structure/closet/crate,/turf/simulated/floor/tiled,/area/townhall/noob)
+"bh" = (/obj/random/projectile,/obj/random/projectile,/obj/random/projectile,/obj/random/projectile,/turf/simulated/floor/tiled,/area/townhall/noob)
+"bi" = (/obj/random/voidsuit,/obj/random/voidsuit,/obj/random/voidsuit,/obj/random/voidsuit,/obj/random/voidsuit,/obj/random/voidsuit,/turf/simulated/floor/tiled,/area/townhall/noob)
+"bj" = (/obj/effect/decal/cleanable/cum,/turf/simulated/wall/iron,/area/townhall/noob)
+"bk" = (/turf/simulated/wall/iron,/area/maintenance)
+"bl" = (/turf/simulated/floor/tiled,/area/maintenance)
+"bm" = (/obj/machinery/light/noob_shrine,/turf/simulated/floor/tiled,/area/maintenance)
+"bn" = (/obj/effect/decal/cleanable/cum,/turf/simulated/floor/tiled,/area/maintenance)
+"bo" = (/obj/structure/bed/alien,/turf/simulated/floor/tiled,/area/maintenance)
+"bp" = (/obj/structure/shuttle/window,/turf/unsimulated/floor/noob,/area/maintenance)
+"bq" = (/turf/unsimulated/floor/rescue_base,/area/maintenance)
+"br" = (/obj/machinery/food_replicator,/turf/simulated/floor/tiled,/area/maintenance)
+"bs" = (/obj/structure/barricade/steel,/turf/simulated/floor/tiled,/area/maintenance)
+"bt" = (/obj/structure/weightlifter,/turf/simulated/floor/tiled,/area/maintenance)
+"bu" = (/obj/structure/table/reinforced,/turf/simulated/floor/tiled,/area/maintenance)
+"bv" = (/obj/structure/undies_wardrobe,/turf/simulated/floor/tiled,/area/maintenance)
+"bw" = (/obj/structure/urinal,/turf/simulated/floor/tiled,/area/maintenance)
+"bx" = (/obj/item/weapon/gun/energy/taser/carbine{desc = "PUSSY DESTROYER 500XE."; name = "PUSSY WAGON DESTROYER ANUS"},/turf/simulated/floor/tiled,/area/maintenance)
+"by" = (/mob/living/simple_animal/construct/wraith,/turf/unsimulated/floor/rescue_base,/area/maintenance)
+"bz" = (/obj/capturebt{name = "Left Capture Point"},/turf/simulated/floor/tiled,/area/maintenance)
+"bA" = (/mob/living/simple_animal/shafra,/turf/unsimulated/floor/rescue_base,/area/maintenance)
+"bB" = (/obj/capturebt{name = "Middle Capture Point"},/turf/unsimulated/floor/rescue_base,/area/maintenance)
+"bC" = (/obj/capturebt{name = "Right Capture Point"},/turf/simulated/floor/tiled,/area/maintenance)
+"bD" = (/obj/structure/sign/monkey_painting,/turf/simulated/wall/iron,/area/maintenance)
+"bE" = (/obj/machinery/vending/snack,/turf/simulated/floor/tiled,/area/maintenance)
+"bF" = (/obj/machinery/vending/cigarette,/turf/simulated/floor/tiled,/area/maintenance)
+"bG" = (/obj/machinery/vending/coffee,/turf/simulated/floor/tiled,/area/maintenance)
+"bH" = (/obj/machinery/vending/containers,/turf/simulated/floor/tiled,/area/maintenance)
+"bI" = (/obj/machinery/vending/tool,/turf/simulated/floor/tiled,/area/maintenance)
+"bJ" = (/obj/machinery/vending/dinnerware,/turf/simulated/floor/tiled,/area/maintenance)
+"bK" = (/obj/machinery/vending/fitness,/turf/simulated/floor/tiled,/area/maintenance)
+"bL" = (/obj/machinery/vending/engineering,/turf/simulated/floor/tiled,/area/maintenance)
+"bM" = (/obj/machinery/vending/games,/turf/simulated/floor/tiled,/area/maintenance)
+"bN" = (/obj/machinery/vending/engivend,/turf/simulated/floor/tiled,/area/maintenance)
+"bO" = (/obj/machinery/vending/fashionvend,/turf/simulated/floor/tiled,/area/maintenance)
+"bP" = (/obj/machinery/vending/medical,/turf/simulated/floor/tiled,/area/maintenance)
+"bQ" = (/obj/machinery/vending/hydronutrients,/turf/simulated/floor/tiled,/area/maintenance)
+"bR" = (/obj/machinery/vending/security,/turf/simulated/floor/tiled,/area/maintenance)
+"bS" = (/obj/machinery/vending/hydroseeds,/turf/simulated/floor/tiled,/area/maintenance)
+"bT" = (/obj/effect/decal/cleanable/cum,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"bU" = (/obj/item/clothing/suit/armor/vest,/obj/item/clothing/suit/armor/vest,/obj/item/clothing/suit/armor/vest,/obj/item/clothing/suit/armor/vest,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"bV" = (/obj/structure/closet/crate,/obj/item/weapon/storage/box/shotgunammo,/obj/item/weapon/storage/box/shotgunammo,/obj/item/weapon/storage/box/shotgunammo,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"bW" = (/obj/item/clothing/head/helmet/riot,/obj/item/clothing/head/helmet/riot,/obj/item/clothing/head/helmet/riot,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"bX" = (/obj/item/clothing/head/helmet/riot,/obj/item/clothing/head/helmet/riot,/obj/item/clothing/head/helmet/riot,/obj/item/clothing/head/helmet/riot,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"bY" = (/obj/structure/closet/crate,/obj/item/weapon/gun/projectile/shotgun/pump/combat,/obj/item/weapon/gun/projectile/shotgun/pump/combat,/obj/item/weapon/gun/projectile/shotgun/pump/combat,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"bZ" = (/obj/item/clothing/head/helmet/gladiator,/obj/item/clothing/head/helmet/gladiator,/obj/item/clothing/head/helmet/gladiator,/obj/item/clothing/head/helmet/gladiator,/obj/item/clothing/head/helmet/gladiator,/obj/item/clothing/head/helmet/gladiator,/obj/item/clothing/head/helmet/gladiator,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"ca" = (/obj/item/clothing/head/helmet/merc,/obj/item/clothing/head/helmet/merc,/obj/item/clothing/head/helmet/merc,/obj/item/clothing/head/helmet/merc,/obj/item/clothing/head/helmet/merc,/obj/item/clothing/head/helmet/merc,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"cb" = (/obj/item/clothing/suit/armor/riot,/obj/item/clothing/suit/armor/riot,/obj/item/clothing/suit/armor/riot,/obj/item/clothing/suit/armor/riot,/obj/item/clothing/suit/armor/riot,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"cc" = (/obj/structure/closet/crate,/obj/item/weapon/gun/energy/laser,/obj/item/weapon/gun/energy/laser,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"cd" = (/obj/item/clothing/suit/armor/riot,/obj/item/clothing/suit/armor/riot,/obj/item/clothing/suit/armor/riot,/obj/item/clothing/suit/armor/riot,/obj/item/clothing/suit/armor/riot,/obj/item/clothing/suit/armor/riot,/obj/item/clothing/suit/armor/riot,/obj/item/clothing/suit/armor/riot,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"ce" = (/obj/structure/closet/crate,/obj/item/weapon/storage/box/shotgunammo,/obj/item/weapon/storage/box/shotgunammo,/obj/item/weapon/storage/box/shotgunammo,/obj/item/weapon/storage/box/shotgunammo,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"cf" = (/obj/random/medical,/turf/simulated/floor/tiled,/area/maintenance)
+"cg" = (/obj/random/handgun,/obj/random/handgun,/obj/random/handgun,/obj/random/handgun,/obj/random/handgun,/obj/random/handgun,/turf/simulated/floor/tiled,/area/maintenance)
+"ch" = (/obj/effect/decal/cleanable/cum,/obj/random/energy,/obj/random/energy,/obj/random/energy,/obj/random/energy,/obj/random/energy,/turf/simulated/floor/tiled,/area/maintenance)
+"ci" = (/obj/random/masks,/obj/random/masks,/obj/random/masks,/obj/random/masks,/turf/simulated/floor/tiled,/area/maintenance)
+"cj" = (/obj/random/voidhelmet,/obj/random/voidhelmet,/obj/random/voidhelmet,/obj/random/voidhelmet,/obj/random/voidhelmet,/obj/random/voidhelmet,/turf/simulated/floor/tiled,/area/maintenance)
+"ck" = (/obj/random/projectile,/obj/random/projectile,/obj/random/projectile,/obj/random/projectile,/turf/simulated/floor/tiled,/area/maintenance)
+"cl" = (/obj/random/voidsuit,/obj/random/voidsuit,/obj/random/voidsuit,/obj/random/voidsuit,/obj/random/voidsuit,/obj/random/voidsuit,/turf/simulated/floor/tiled,/area/maintenance)
+"cm" = (/obj/structure/barricade,/turf/simulated/floor/tiled,/area/maintenance)
+"cn" = (/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"co" = (/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/turf/simulated/floor/tiled,/area/townhall/chungus)
+"cp" = (/obj/item/device/flash,/obj/item/device/flash,/obj/item/device/flash,/obj/item/device/flash,/obj/item/device/flash,/turf/simulated/floor/tiled,/area/townhall/noob)
+"cq" = (/obj/item/device/flash,/obj/item/device/flash,/obj/item/device/flash,/obj/item/device/flash,/turf/simulated/floor/tiled,/area/townhall/noob)
+"cr" = (/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/turf/simulated/floor/tiled,/area/townhall/noob)
+"cs" = (/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/obj/item/device/flashlight/maglight,/turf/simulated/floor/tiled,/area/townhall/noob)
+"ct" = (/obj/effect/decal/cleanable/cum,/obj/item/device/flash,/obj/item/device/flash,/obj/item/device/flash,/turf/simulated/floor/tiled,/area/townhall/noob)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababababababababababababababababababababababababababadadadadadadadadadadadadadadadad
+aaaaaaaeafafaeafafafaaaaaaaaababababababababababababababababababababababababababababababababababababababababadadadagagagakaiajakakakakalacad
+aaaaaaafafafafahahahafaaaaaaababababababababababababababababababababababababababababababababababababababababadadadagagagananananaoapapaoaqad
+aaaaafafafarasahahahaeaaaaaaababababababababababababababababababababababababababababababababababababababababadadadatauavawaxayatauakawaxazad
+aaaAaBaCaDaAaBaCaDafafaaaaaaababababababababababababababababababababababababababababababababababababababababadaEaFaGaGaGaGaGaHaGaGaGaGaGazad
+aaaIaIaIaIaIaIaIaIcnaJafaaaaababababababababababababababababababababababababababababababababababababababababadaFaFaKaKaLaMaNaOaKaKakaMaNazad
+aaaPaQaRaSaPaQaRaScnaJafaeaaababababababababababababababababababababababababababababababababababababababababadaTaTatauakawaxaUatauakawaxazad
+aaaAaBaCaDaAaBaCaDcnaJafafaaababababababababababababababababababababababababababababababababababababababababadaTaTaGaGaGaGaGaVaGaGaGaGaGakad
+aaaIaIaIaIaIaIaIaIcoaJafafaaababababababababababababababababababababababababababababababababababababababababadakakaKaKaVaMaNaVaKaKakaMaNakad
+aaaPaQaRaSaPaQaRaSafafafafaaababababababababababababababababababababababababababababababababababababababababadakakaWaXaYaZaVaVaVakakakakbaad
+aaaaafafafafafafafafafaeafaaababababababababababababababababababababababababababababababababababababababababadalakakavakbbbcbdbeakakakakadad
+aabfaaafafafafafafafafaaaaaaababababababababababababababababababababababababababababababababababababababababadadakcpbgakbhakakbialakakadadad
+aaaaaaaaafafafafafafaaaaaaaaababababababababababababababababababababababababababababababababababababababababadadadcqaLcrcscscscsakadbjadadad
+aaaaaabfafafafaeafaaaaaaaaaaababababababababababababababababababababababababababababababababababababababababadadadadakakakakakakakadadadadad
+aaaaaaaaaaafafaaaaaaaaaaaaaaababababababababababababababababababababababababababababababababababababababababadadadadaWakakakakakakadadadadad
+bkbkbkbkbkblblbkbkbkbkbkbkbkababababababababababababababababababababababababababababababababababababababababbkbkbkbkbmblblblblbmblbkbkblblbk
+bkbkbkbkbkblblblbkbkbkbkbkbkababababababababababababababababababababababababababababababababababababababababbkbkbkbkbkblblblblblbkbkblblblbk
+bkbkamcfcfcfbnblblblbkbkbkbkababababababababababababababababababababababababababababababababababababababbkbkbkbkblblbkblbnblbnblbkblbobobobk
+bkblcgchcicjblblblblbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbpbpbpbkbkbkbkbkbkbkbkbkbkbkblblblblblblblblblbobobobk
+bkblckblblclblbkbkbkbkblblblbkbkbkblblblblblblblblblbqbqblblblblblblbkbkbkbkbqbqbqbqbqblbkbkbkbkbkbkbkbkbkbkbkbkbrbrbrblblblblblblblbobobobk
+bkblblblblbkbkbkbkbkblblblbsbsbsbkblbkbkbkbkbkbqbqbkbkbkbqbqbqbqbqbqbqbkbqbqbqbqbqbqbqblbkbsbsbsbsbsbsblblblblblblblblblblblblblblblblblblbk
+bkblblblbkbkblbkbkblblblbkbsbsbsbsblblblblbkbkbqbqbqbqbkbkbkbkbkbkbqblblbqbqbqbqbkbqbqblblbsbsbsbsbsbsblblblblblblblblblblblbtbtblblblbubkbk
+bkblblblbvbkbkbkblblblblbkbsbsbsbsblblblblbkblbqbqbqbqbqbqbqbqbqbkbkbkbqbqbqbqbqbkbkbkbkbkbkbkbkbkbkbkblblblblblblblblblblblbtbtblblblbubkbk
+bkbwblblblbububublblblblbkbsbsbsbsblblblblblblbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbkbkbkbkbkbkbkbkbkbkblblblblblblblblblblblbtbtblblblbubkbk
+bkbwblblblblblblblblblblblbsbsbsbsblblbkbkbkblbqbqbqbqbqbqbqbqbkbqbqbqbqbqbqbqbqbqbqbqblblblbsbsbsbsbsblblblblblblblblblblblbtbtblblblbubkbk
+bkbwblblblbububublblblblblbsbsbsbsblblbkblblblbqbqbqbqbqbqbqbkbkbqbqbqbqbqbqbqbqbqbqbqblblblbsbsbsbsbsblblblblblblblblblblblbtbtblblblbubkbk
+bkbwblblblblblblblblbkbkbkbkbkbkbkblblblblblblbqbqbqbqbkbqbqbkbqbqbqbqbqbqbqbqbqbqbqbqblblblblblblblblbkbkbkblblblblblblblblblblblblblbubkbk
+bkbwblblblblbubububkbkbkbkbkbkbkbkblblblblblblbkbkbkbkbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqbqblblblbkbkbkbkbkbkbkbkbkbkbkbkblblblblblblblblblbubkbk
+bkblblblbubububkbkbkblblbkbkbkblbkbkbkblblbkblbqbqbqbqbqbkbkbkbqbqbkbkbqbqbqbqbqbqbkbkblblblbkbkbkbkbkbkbkbkbkbkbkbkbkblblblblblblbvblblbkbk
+bkblblblbubkbkbkblblblblblblblblblblcmblblbkblbqbqbqbqbqbkbkbqbqbqbqbkbkbkbqbqbqbqbqbkbkblblbkbkbkbkbkbkbkbkbkbkbkbkblblblbkbkbkbkbkblblbkbk
+bkbkbkblbkbkblblblbkbkbkblblblbkblblbkblblbkblbqbqbqbqbkbkbkbqbqbqbqbqbqbkbkbqbqbqbqbqbkbkbkbkbkbkbkblblblblblblblblblblblblblbkbkbkbkbkbkbk
+bkbkbkblbkblblblblblcmblbxblblblblblbkblblblblbkbqbqbqbkbkbqbqbqbybybybqbqbqbkbqbqbqbqblblblblblblblblblblblblblbkcmbkblblblblbEblbkbkbkbkbk
+bkblblblblblbkblblcmbzcmblbkbkblbkbkblblblblblbkbqbqbqbqbqbqbqbqbAbBbAbqbqbqbkbqbqbqbqblblblblblblblblblblblblbxcmbCcmblblblblbFblblbkbkbkbk
+bkbkbkblblblblblbkblblblblblblblbkblblblblblblbkbkbqbqbqbqbqbqbqbybybybqbqbqbkbkbqbqbqbkbkblblblblblbkblblblblblbkcmbkblblblblbGblblblbkbkbk
+bkbkbkblblblbkbkbkblbkbkbkblbkbkbkblblbkbkblblbqbkbqbqbqbkbkbqbqbqbqbqbqbqbqbkbqbqbqbqblbkbkblblblbkbkblblblblblblblblblblblblbHblblblbkbkbk
+bkbkbkblblbkbkblbkblbsbkbkblbkblblblblblbkblblbqbkbqbqbqbqbkbkbkbkbkbqbqbqbqbkbqbqbqbqblblbkblblbkbkblblblblblblblblblblblblblbJblblblbkbkbk
+bkblblblblbkbkbkbkblbsbsbsblblblblblblblblblblbqbqbqbqbqbqbqbkbkbkbkbkbqbqbkbkbqbqbqbqblblbkbkbkbkblblblblblblblblblblblblblblbLblblblbkbkbk
+bkblblblblblblblblblbsbsbsblblblblblblblblblblbqbqbqbqbkbqbqbqbkbkbkbkbqbqbkbqbqbqbqbqblblbkbkbkbkblblblblblblblblblblblblblblbNblblblblbkbk
+bkblblblblblblblblblbsbsbsblblblblblblblblbkblbqbqbqbkbkbqbqbqbqbqbqbqbqbqbqbkbkbqbqbqblblblbkbkbkbkbkbkbkblblblblblblblblblblbPblblblblbkbk
+bkblblblblblblblblblbsbsbsblblbkblblblblblbkbkbqbqbkbkbkbqbqbqbqbkbqbqbqbqbqbqbqbqbqbqblbkblblbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkblblblblbkbkbkbk
+bkblblblblbkbkblblblbsbsbsblblbkbkblblblblblbkbqbqbkbkbkbqbqbqbqbkbqbqbqbqbqbqbqbqbqbqblbkblblblblbkblbkbkbkbkbkbkblblblblblblblblblbkbkbkbk
+bkblblblblblbkbkblblblbkblblblblbkblblblblblbkbqbqbkbkbqbqbqbqbqbqbqbqbqbqbqbqbqbkbkbqblbkblblblblblblbsbsbsbsbsblblblblblblblblblblblblblbk
+bkblblblblblblbkbkblblbkbkblblblbkbkblblblblblbqbqbkbkbqbqbqbkbkbkbDbqbqbqbqbqbkbkbqbqblbkbkbkblblblblbsbsbsbsbsbsblblblblblblblblblblblblbk
+bkbEblblblblblblblblblbkbkbkblblblblblblblblblbqbqbkbkbqbqbkbkbkbkbqbqbqbqbqbqbkbqbqbqblblblbkbkblblblbsbsbsbsbsbsblblblblblblblblblblblblbk
+bkbFblblblblblblblblblblbkbkbkblblblblblblblblblbqbkbkbkbqbkbkbkbqbqbqbqbqbqbqbqbqbqbqblblblblblblblblbsbsbsbsbsbsblblblblblblblblblblblblbk
+bkbGblblblblbrblblblblblbkbkbkbkbkbkbkbkbkbkbkblbkbkbkbkbkbkbkbqbqbqbqbqbqbkbkbkbqbqbqblblblblblblblblbsbsbsbsbsbsblblblblblblblblblblblblbk
+bkbHblblblblbrblblblbIblbkbkbkbkbkbkbkbkbkbkbkblbkbkbkbkbkbqbqbqbqbqbqbqbqbqbqbkbkbkbkbkbkbkbkbkblblblbsbsbsbsbsbsblblblblblblblblblblblblbk
+bkbJblblblblbrblblblbKbkbkbkbkbkbkbkbkbkbkbkbkblblblblbqbqbqbqbqbqbqbqbqbqbqbqblblblblblblblblblblbkbkbkbkbkbsbsbsblblblblblblblblblblbkbkbk
+bkbLblblblblblblblblbMbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkbkblblblblblblblbnblblbkbkbk
+bkbNblblblblblblblblbObkbkbkababababababababababababababababababababababababababababababababababababababababbkbkbkbkbkbnblblblblblbkbkbkbkbk
+bkbPblblblblblblblblbQbkbkbkababababababababababababababababababababababababababababababababababababababababbkbkbkbkbkbkbkblblblblbkbkbkbkbk
+bkbkbRblblblblblbnblbSbkbkbkababababababababababababababababababababababababababababababababababababababababbkbkbkbkbkbkbkblblblbkbkbkbkbkbk
+bkbkbkbkbkbkblblblblblbkbkbkababababababababababababababababababababababababababababababababababababababababadadadadadadadadakakadadadadadad
+bkbkbkbkblbkbkblblbkbkbkbkbkababababababababababababababababababababababababababababababababababababababababadadadadadadadakakaWakakakakakad
+aaaaaaaaaaaaaaafbTaaaaaaaaaaababababababababababababababababababababababababababababababababababababababababadadadadalakakakakakakakakaWakad
+aaaaaaaaaaaaaaafafafafafafaaababababababababababababababababababababababababababababababababababababababababadadadadakakakakakakakakakakakad
+aaaaaaaabfafafafafbUbUaeafaaababababababababababababababababababababababababababababababababababababababababadadadadakakakakakalakakaWakakad
+aaafaAaBaCaDaAbVaCaDbWbWafaaababababababababababababababababababababababababababababababababababababababababadadadadakakakaWakakakakakakakad
+aaaJaIaIaIaIaIaIaIaIbXbWafaaababababababababababababababababababababababababababababababababababababababababadadadalakcrcscscscsalakakakakad
+aaafaPaQaRaSaPbYaRaSbZaeafaaababababababababababababababababababababababababababababababababababababababababadadbaakakakakakakakctcqalakakad
+aaafaAaBaCaDaAbVaCaDcacbafaaababababababababababababababababababababababababababababababababababababababababadadadakaXaYaZaVaVaVakakakakakad
+aaccaIaIaIaIaIaIaIaIcacdafaaababababababababababababababababababababababababababababababababababababababababadadadbgaXaYaZaVaVaVakakakalakad
+aaafaAaBaCaDaAbYaCaDcnaeafaaababababababababababababababababababababababababababababababababababababababababadadadakaoapapaoaoapapaoakakakad
+aaccaIaIaIaIaIaIaIaIcnafafaaababababababababababababababababababababababababababababababababababababababababadadatauavawaxakakatauavawaxakad
+aaafaPaQaRaSaPbVaRaScnafafaaababababababababababababababababababababababababababababababababababababababababadadaGaGaGaGaGakakaGaGaGaGaGakad
+aaafaAaBaCaDaAbYaCaDcoaeafaaababababababababababababababababababababababababababababababababababababababababadadaKaKakaMaNakakaKaKaLaMaNalad
+aaaJaIaIaIaIaIaIaIaIafafafaaababababababababababababababababababababababababababababababababababababababababadadatauakawaxakakatauavawaxakad
+aaafaPaQaRaSaPceaRaSafafafaaababababababababababababababababababababababababababababababababababababababababadadaGaGaGaGaGakakaGaGaGaGaGakad
+aaafafafafafafafafarasaeafaaababababababababababababababababababababababababababababababababababababababababadadaKaKakaMaNaiajaKaKaLaMaNalad
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababababababababababababababababababababababababababababababababababababadadadadadadadadadadadadadadadad
+"}
